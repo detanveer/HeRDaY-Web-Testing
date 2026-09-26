@@ -1,4 +1,4 @@
-@font-face{font-family:DMSerif;src:url("DMSerifDisplay-Regular.ttf")}@font-face{font-family:Poppins;src:url("Poppins-Regular.ttf")}
+@font-face{font-family:DMSerif;src:url("dm_serif_display_regular.ttf")}@font-face{font-family:Poppins;src:url("poppins_regular.ttf")}
 :root{--cw:92vw;--bg:#fff8fa}*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:#3f2734;font-family:Poppins,sans-serif}
 body{padding-bottom:92px}.page{width:100%;min-height:100vh;background:var(--bg)}.header,.content{width:var(--cw);margin-inline:auto}
 .header{height:74px;display:flex;align-items:center;justify-content:space-between}.logo{width:88px;height:auto}.bell{width:31px;height:31px;object-fit:contain}
