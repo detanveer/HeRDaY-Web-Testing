@@ -3,7 +3,7 @@
 body{padding-bottom:92px}.page{width:100%;min-height:100vh;background:var(--bg)}.header,.content{width:var(--cw);margin-inline:auto}
 .header{height:74px;display:flex;align-items:center;justify-content:space-between}.logo{width:88px;height:auto}.bell{width:31px;height:31px;object-fit:contain}
 .hero{position:relative;width:100%;aspect-ratio:882/512;border-radius:16px;overflow:hidden}.hero>img{width:100%;height:100%;object-fit:contain;display:block}
-.greet{position:absolute;left:5.5%;top:47%;display:flex;flex-direction:column}.greet small{font-size:11px}.greet strong{font:24px DMSerif}.greet span{font-size:8px}
+.greet{position:absolute;left:5.5%;top:35%;display:flex;flex-direction:column}.greet small{font-size:11px}.greet strong{font:24px DMSerif}.greet span{font-size:8px}
 .grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px 8px;margin-top:9px}.span2{grid-column:1/-1}
 .card{min-width:0;background:white;border-radius:14px;overflow:hidden;box-shadow:0 2px 8px #7d526012}.card .art{display:block;width:100%;aspect-ratio:431/344;object-fit:contain;background:#fbeff4}
 .card.wide .art{aspect-ratio:882/346}.strip{height:55px;display:flex;align-items:center;padding:6px 7px;gap:6px}.ico{width:30px;height:30px;object-fit:contain;flex:none}.copy{min-width:0;flex:1}

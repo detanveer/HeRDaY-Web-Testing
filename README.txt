@@ -1,22 +1,16 @@
-HERDAY 92% CALIBRATION — TARGETED CORRECTION
+HERDAY 92% — GREETING POSITION CORRECTION ONLY
 
-UNCHANGED:
-- Foreground width: 92%
-- Background
-- Artwork sizing/crop behavior
-- Card geometry/order
-- Copy
-- Header geometry
-- Fixed bottom-navigation behavior
+Changed:
+- Hero greeting block vertical position: top 47% -> 35%
 
-CORRECTED:
-- Restored approved Hero readability mask using the recorded 972x500 master geometry:
-  X 29, Y 91, W 340, H 208
-  #FCE8EF, peak alpha 188/255
-  24px four-side feather
-  24px corner radius
-  no blur/shadow
-- Card icons: 30px -> 34px
-- Bottom navigation icons: 27px -> 30px
+Untouched:
+- Approved Hero mask geometry
+- Hero artwork
+- 92% foreground width
+- Header/logo/bell
+- Card geometry/artwork
+- Card icon sizes
+- Bottom navigation/icon sizes
+- Copy and fonts
 
-Replace only index.html and responsive.css in the GitHub Pages repo root.
+Replace only responsive.css in the GitHub Pages repo root.
