@@ -1,17 +1,25 @@
-HERDAY WEB — FOREGROUND FIT CALIBRATION PATCH
+HERDAY WEB — ACTUAL RESPONSIVE CONTENT-WIDTH CALIBRATION
 
-Purpose:
-- Phone viewport/background remains fixed.
-- Calibration slider scales ONLY the foreground Home composition:
-  logo, bell, Hero, cards and fixed Bottom Navigation.
-- No artwork, copy, card internals or visual design was changed.
-- Live readout shows foreground width, side gutter and viewport percentage.
+This replaces the previous transform/scale test.
 
-Repo use:
-Replace the existing root files:
+LOCKED:
+- Phone viewport/background remains fixed at 100%.
+- No CSS transform scale is used for Home calibration.
+- No artwork/copy/icon redesign.
+- No Android source changes.
+
+ADJUSTABLE:
+- Only the actual foreground content-frame width as a percentage of viewport.
+- Slider range: 78% to 98%.
+- Live output: viewport px, content px, side gutter px.
+
+Foreground scope:
+Logo, bell, Hero, cards and Bottom Navigation.
+
+Replace these repo-root files:
 index.html
 calibration.html
 home-fragment.html
 styles.css
 
-Then open calibration.html after GitHub Pages redeploys.
+Then let GitHub Pages redeploy and open calibration.html.
