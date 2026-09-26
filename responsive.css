@@ -12,3 +12,27 @@ h2{font:15px/17px DMSerif;margin:0;white-space:nowrap}p{font:8.5px/12px Poppins;
 .nav div{display:flex;flex-direction:column;align-items:center;gap:1px;font-size:8px}.nav img{width:27px;height:27px;object-fit:contain}
 .cal{position:fixed;z-index:99;right:6px;top:6px;width:190px;padding:7px 9px;background:#fffdfdef;border:1px solid #ead4e0;border-radius:11px;box-shadow:0 3px 14px #0002;font:11px Poppins;color:#5f344f}.cal input{width:100%}.cal button{border:0;border-radius:7px;padding:4px 7px;background:#f4dce9;color:#5f344f}
 @media(min-width:700px){:root{--cw:520px}.header,.content,.nav{max-width:520px}}
+
+/* Approved Hero runtime readability mask — master 972x500:
+   x29 y91 w340 h208, #FCE8EF, peak alpha 188/255, 24px feather, 24px radius.
+   No blur/shadow. */
+.hero::after{
+  content:"";position:absolute;z-index:1;
+  left:2.983539%;top:18.2%;width:34.979424%;height:41.6%;
+  border-radius:7.058824%;
+  background:rgba(252,232,239,.737255);
+  -webkit-mask-image:
+    linear-gradient(to right,transparent 0,#000 7.058824%,#000 92.941176%,transparent 100%),
+    linear-gradient(to bottom,transparent 0,#000 11.538462%,#000 88.461538%,transparent 100%);
+  -webkit-mask-composite:source-in;
+  mask-image:
+    linear-gradient(to right,transparent 0,#000 7.058824%,#000 92.941176%,transparent 100%),
+    linear-gradient(to bottom,transparent 0,#000 11.538462%,#000 88.461538%,transparent 100%);
+  mask-composite:intersect;
+  pointer-events:none
+}
+.greet{z-index:2}
+
+/* Optical icon correction only */
+.ico{width:34px;height:34px}
+.nav img{width:30px;height:30px}

@@ -1,12 +1,22 @@
-HERDAY CLEAN WIDTH COMPARISON
+HERDAY 92% CALIBRATION — TARGETED CORRECTION
 
-No Android source changes.
-No artwork/icon/card redesign.
-This patch only removes the on-screen calibration panel so the foreground fit can be judged unobstructed.
+UNCHANGED:
+- Foreground width: 92%
+- Background
+- Artwork sizing/crop behavior
+- Card geometry/order
+- Copy
+- Header geometry
+- Fixed bottom-navigation behavior
 
-Open:
-fit-90.html
-fit-92.html
-fit-94.html
+CORRECTED:
+- Restored approved Hero readability mask using the recorded 972x500 master geometry:
+  X 29, Y 91, W 340, H 208
+  #FCE8EF, peak alpha 188/255
+  24px four-side feather
+  24px corner radius
+  no blur/shadow
+- Card icons: 30px -> 34px
+- Bottom navigation icons: 27px -> 30px
 
-index.html defaults to 92%, and can also use ?width=90 etc.
+Replace only index.html and responsive.css in the GitHub Pages repo root.
