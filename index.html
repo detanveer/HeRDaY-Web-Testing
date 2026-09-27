@@ -1,7 +1,6 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>HerDay</title><link rel="stylesheet" href="responsive.css"></head><body>
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>HerDay</title><link rel="stylesheet" href="responsive.css"></head><body>
 <div class="page"><header class="header"><img class="logo" src="logo_herday.webp" alt="HerDay"><img class="bell" src="ic_notification_bell_final.webp" alt=""></header>
-<main class="content"><section class="hero"><img src="hero_home_final.webp" alt=""><div class="greet"><small>Good morning,</small><strong>Tanveer</strong><span>A little space, just for you</span></div></section>
+<main class="content"><section class="hero"><img src="hero_home_final.webp" alt=""><div class="greet"><span class="gm">Good morning,</span><span class="nm">Tanveer</span><span class="tg">A little space, just for you</span></div></section>
 <section class="grid">
 <article class="card"><img class="art" src="art_poetry.webp"><div class="strip"><img class="ico" src="ic_poetry.webp"><div class="copy"><h2>Poetry</h2><p>Words from the heart</p></div><span class="chev">›</span></div></article>
 <article class="card"><img class="art" src="art_girls_space.webp"><div class="strip"><img class="ico" src="ic_girls_space.webp"><div class="copy"><h2>Girls' Space</h2><p>Conversations. Friendships. You.</p></div><span class="chev">›</span></div></article>
@@ -13,9 +12,4 @@
 <div class="span2"><article class="card wide"><img class="art" src="art_community.webp"><div class="strip"><img class="ico" src="ic_community.webp"><div class="copy"><h2>Community</h2><p>Connect, share and grow together.</p></div><span class="chev">›</span></div></article></div>
 </section></main></div>
 <nav class="nav"><div><img src="nav_home.webp"><span>Home</span></div><div><img src="nav_explore.webp"><span>Explore</span></div><div><img src="nav_buy_sell.webp"><span>Buy & Sell</span></div><div><img src="nav_shop.webp"><span>Shop</span></div><div><img src="nav_profile.webp"><span>Profile</span></div></nav>
-<script>
-document.documentElement.style.setProperty('--cw','92vw');
-const hero=document.querySelector('.hero');
-function syncHeroWidth(){hero.style.setProperty('--hero-w',hero.getBoundingClientRect().width+'px')}
-new ResizeObserver(syncHeroWidth).observe(hero);syncHeroWidth();
-</script></body></html>
+</body></html>

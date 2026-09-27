@@ -1,5 +1,9 @@
-HerDay Hero DOM correction.
-Replace BOTH index.html and responsive.css.
-Canvas removed. Hero text is normal HTML.
-92% fit, current mask, cards, artwork, icons and navigation preserved.
-PRE-882 Kalam fonts/sizes/anchors are used with actual rendered Hero width scaling.
+Replace index.html and responsive.css only.
+
+This pass removes canvas and JavaScript Hero text sizing.
+It references the exact existing root files:
+kalam_regular.ttf
+kalam_bold.ttf
+
+Hero font sizes are tied directly to the locked 92vw foreground width using the PRE-882 972-wide master scale.
+Mask and all non-Hero geometry remain unchanged.
