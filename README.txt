@@ -1,16 +1,11 @@
-HERDAY 92% — GREETING POSITION CORRECTION ONLY
+HERDAY 92% — ANDROID HERO TYPOGRAPHY CORRECTION
 
-Changed:
-- Hero greeting block vertical position: top 47% -> 35%
+Verified source: HerDay-FINAL-Home-Implemented-Source-PRE-882-SCALE.zip
 
-Untouched:
-- Approved Hero mask geometry
-- Hero artwork
-- 92% foreground width
-- Header/logo/bell
-- Card geometry/artwork
-- Card icon sizes
-- Bottom navigation/icon sizes
-- Copy and fonts
+Hero only:
+Good morning = Kalam Regular, master 41px, anchor 58/110
+Name = Kalam Bold, master 58px, anchor 58/160
+Subtitle = Kalam Regular, master 25px, anchor 60/236
 
-Replace only responsive.css in the GitHub Pages repo root.
+92% screen-fit, mask, artwork, cards, icons and nav geometry remain unchanged.
+Replace only responsive.css.
