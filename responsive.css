@@ -6,9 +6,49 @@
 body{padding-bottom:92px}.page{width:100%;min-height:100vh;background:var(--bg)}.header,.content{width:var(--cw);margin-inline:auto}
 .header{height:74px;display:flex;align-items:center;justify-content:space-between}.logo{width:88px;height:auto}.bell{width:31px;height:31px;object-fit:contain}
 .hero{position:relative;width:100%;aspect-ratio:882/512;border-radius:16px;overflow:hidden}.hero>img{width:100%;height:100%;object-fit:contain;display:block}
-.hero::after{content:"";position:absolute;z-index:1;left:2.983539%;top:16.112847%;width:34.979424%;height:36.824219%;border-radius:calc(24 / 972 * 100%);background:rgba(252,232,239,.737255);-webkit-mask-image:linear-gradient(to right,transparent 0,#000 7.058824%,#000 92.941176%,transparent 100%),linear-gradient(to bottom,transparent 0,#000 11.538462%,#000 88.461538%,transparent 100%);-webkit-mask-composite:source-in;mask-image:linear-gradient(to right,transparent 0,#000 7.058824%,#000 92.941176%,transparent 100%),linear-gradient(to bottom,transparent 0,#000 11.538462%,#000 88.461538%,transparent 100%);mask-composite:intersect;pointer-events:none}
-.greet{display:none}
-.heroTextCanvas{position:absolute;z-index:2;inset:0;width:100%;height:100%;pointer-events:none}
+
+/* Keep the approved mask geometry exactly as in the working web version. */
+.hero::after{
+ content:"";position:absolute;z-index:1;
+ left:2.983539%;top:18.2%;width:34.979424%;height:41.6%;
+ border-radius:7.058824%;
+ background:rgba(252,232,239,.737255);
+ -webkit-mask-image:linear-gradient(to right,transparent 0,#000 7.058824%,#000 92.941176%,transparent 100%),linear-gradient(to bottom,transparent 0,#000 11.538462%,#000 88.461538%,transparent 100%);
+ -webkit-mask-composite:source-in;
+ mask-image:linear-gradient(to right,transparent 0,#000 7.058824%,#000 92.941176%,transparent 100%),linear-gradient(to bottom,transparent 0,#000 11.538462%,#000 88.461538%,transparent 100%);
+ mask-composite:intersect;pointer-events:none
+}
+
+/* PRE-882 Android Hero text:
+   source master = 972 wide
+   x anchors = 58,58,60
+   sizes = 41,58,25
+   DOM sizes are driven by Hero width (not CSS parent font-size).
+   top values compensate Kalam ascender so Android ascender anchors register correctly. */
+.greet{position:absolute;inset:0;z-index:2;pointer-events:none;color:#3f2734}
+.greet small,.greet strong,.greet span{
+ position:absolute;display:block;margin:0;padding:0;white-space:nowrap;
+ line-height:1;font-style:normal
+}
+.greet small{
+ left:5.967078%;
+ top:calc((110 / 972) * 100% - 0.05em);
+ font-family:KalamRegular,sans-serif;font-weight:400;
+ font-size:calc(var(--hero-w) * 41 / 972)
+}
+.greet strong{
+ left:5.967078%;
+ top:calc((160 / 972) * 100% - 0.05em);
+ font-family:KalamBold,sans-serif;font-weight:700;
+ font-size:calc(var(--hero-w) * 58 / 972)
+}
+.greet span{
+ left:6.172840%;
+ top:calc((236 / 972) * 100% - 0.05em);
+ font-family:KalamRegular,sans-serif;font-weight:400;
+ font-size:calc(var(--hero-w) * 25 / 972)
+}
+
 .grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px 8px;margin-top:9px}.span2{grid-column:1/-1}
 .card{min-width:0;background:white;border-radius:14px;overflow:hidden;box-shadow:0 2px 8px #7d526012}.card .art{display:block;width:100%;aspect-ratio:431/344;object-fit:contain;background:#fbeff4}.card.wide .art{aspect-ratio:882/346}
 .strip{height:55px;display:flex;align-items:center;padding:6px 7px;gap:6px}.ico{width:34px;height:34px;object-fit:contain;flex:none}.copy{min-width:0;flex:1}
