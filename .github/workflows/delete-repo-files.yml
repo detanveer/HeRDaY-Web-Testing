@@ -1,0 +1,37 @@
+name: Delete Repo Files Except Dot Files
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  delete-files:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Delete everything except dot files and dot folders
+        shell: bash
+        run: |
+          find . -mindepth 1 -maxdepth 1 \
+            ! -name '.*' \
+            -exec rm -rf -- {} +
+
+      - name: Commit and push deletion
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A
+
+          if git diff --cached --quiet; then
+            echo "Nothing to delete."
+            exit 0
+          fi
+
+          git commit -m "Delete repo files except dot files and folders"
+          git push
