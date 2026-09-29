@@ -1,0 +1,27 @@
+name: Create Full Repo ZIP
+
+on:
+  workflow_dispatch:
+
+jobs:
+  create-zip:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Create ZIP excluding dot files and folders
+        run: |
+          zip -r HerDay-Web-Testing-Full-Source.zip . \
+            -x ".*" \
+               "*/.*" \
+               "*/.*/*" \
+               "HerDay-Web-Testing-Full-Source.zip"
+
+      - name: Upload ZIP
+        uses: actions/upload-artifact@v4
+        with:
+          name: HerDay-Web-Testing-Full-Source
+          path: HerDay-Web-Testing-Full-Source.zip
+          if-no-files-found: error
