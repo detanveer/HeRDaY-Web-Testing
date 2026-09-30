@@ -96,3 +96,72 @@ body.beauty-mode .nav{z-index:40}.beauty-shell>*:last-child{margin-bottom:18px}
 .create-page .area-suggestions button{font-size:10.5px;padding:8px 10px}
 .create-page>.btn.primary{min-height:42px;padding:10px 13px;border-radius:9px;font-size:12px;margin-top:2px}
 .create-page>.muted:last-child{font-size:9.5px!important;margin:4px 0 0!important}
+
+/* Final approved-reference correction — Create Beauty Profile only. */
+.beauty-shell.create-profile-screen{width:86vw;max-width:566px;padding-bottom:calc(102px + env(safe-area-inset-bottom));overflow:visible}
+.create-profile-screen .beauty-head{padding:10px 0 7px;gap:9px}
+.create-profile-screen .beauty-head .back{font-size:31px;min-width:25px;line-height:.9}
+body.beauty-mode .create-profile-screen .beauty-head h1{font-size:22px;line-height:1.05}
+.create-profile-screen .beauty-head p{font-size:10px;margin-top:3px}
+.create-page{padding-bottom:8px}
+.create-page .form-section{padding:9px 10px;border-radius:10px;margin:7px 0;border-color:#f0dfe7}
+.create-page .form-section h2{font-size:16.5px;line-height:1.08;margin:0 0 2px;text-align:left}
+.create-page .muted{font-size:9.5px;line-height:1.28}
+.create-page .photo-uploader{height:125px;padding-top:8px;padding-bottom:7px;display:flex;flex-direction:column;align-items:center}
+.create-page .photo-uploader h2{align-self:stretch}
+.create-page .photo-uploader .avatar{width:61px;height:61px;margin:0 auto 1px;font-size:29px;flex:0 0 auto}
+.create-page .photo-uploader .avatar img{width:100%;height:100%;object-fit:cover}
+.create-page .upload-label{min-width:111px;text-align:center;padding:4px 12px;font-size:10px;line-height:18px}
+.create-page .photo-help{margin-top:3px!important;text-align:center}
+.create-page .field{height:32px;min-height:32px;padding:7px 10px;border-radius:7px;font-size:10.5px;border-color:#eadce3}
+.create-page textarea.field{height:58px;min-height:58px;padding-top:11px}
+.create-page .section-help{margin-top:4px}
+.create-page .icon-field{position:relative}
+.create-page .icon-field>span{position:absolute;z-index:1;left:12px;top:50%;transform:translateY(-50%);color:var(--pink);font-size:17px;line-height:1}
+.create-page .icon-field .field{padding-left:39px}
+.create-page .textarea-icon>span{top:13px;transform:none;font-size:15px}
+.create-page .category-select{display:flex;align-items:center;justify-content:space-between;text-align:left;color:var(--muted);margin-top:5px}
+.create-page .category-select b{color:var(--pink);font-size:13px}
+.create-page .chips{gap:5px;margin-top:5px!important}
+.create-page .chip{display:flex;align-items:center;gap:12px;border-radius:7px;padding:5px 9px;font-size:9.5px;line-height:14px;cursor:pointer}
+.create-page .chip span{color:var(--pink);font-size:14px;line-height:1}
+.create-page .dynamic-add{gap:6px;margin-top:5px}
+.create-page .dynamic-add .btn{min-width:74px;height:32px;min-height:32px;padding:6px 9px;font-size:10px;border-radius:7px}
+.create-page .dynamic-list{margin-top:5px;gap:3px}
+.create-page .dynamic-row{height:29px;min-height:29px;padding:5px 8px;border-radius:6px;font-size:10px}
+.create-page .dynamic-row button{font-size:14px;padding:0 3px;line-height:1;color:var(--pink)}
+.create-page .area-help{margin:4px 0}
+.create-page .phone-field{position:relative;display:grid;grid-template-columns:38px 58px minmax(0,1fr);align-items:center;height:34px;border:1px solid #eadce3;border-radius:7px;background:#fff;overflow:hidden}
+.create-page .phone-field .wa-icon{color:#08aa67;text-align:center;font-size:18px}
+.create-page .phone-prefix{height:100%;display:flex;align-items:center;padding-left:8px;border-left:1px solid #eadce3;border-right:1px solid #eadce3;font-size:10.5px;color:var(--ink)}
+.create-page .phone-field .field{height:100%;border:0;border-radius:0;padding-left:10px}
+.create-page .continue-button{height:39px;min-height:39px;margin-top:4px;padding:8px 13px;border-radius:8px;font-size:11px;font-weight:400;position:relative}
+.create-page .continue-button span{position:absolute;right:15px;font-size:22px;top:6px}
+.create-page .next-note{text-align:center;margin:3px 0 0!important;font-size:8.5px!important}
+@media(max-width:370px){.beauty-shell.create-profile-screen{width:88vw}.create-page .form-section h2{font-size:15.5px}.create-page .photo-uploader{height:122px}}
+@media(max-width:520px){
+ .create-profile-screen .beauty-head{padding:4px 0 3px}
+ body.beauty-mode .create-profile-screen .beauty-head h1{font-size:18px}
+ .create-profile-screen .beauty-head p{font-size:8px;margin-top:2px}
+ .create-profile-screen .beauty-head .back{font-size:26px;min-width:22px}
+ .create-page .form-section h2{font-size:14px}
+ .create-page .muted{font-size:8px}
+ .create-page .form-section:nth-child(2){height:69px}
+ .create-page .form-section:nth-child(3){height:79px}
+ .create-page .form-section:nth-child(4){height:115px}
+ .create-page .form-section:nth-child(5){height:134px}
+ .create-page .form-section:nth-child(6){height:145px}
+ .create-page .form-section:nth-child(7){height:63px}
+ .create-page .field{height:25px;min-height:25px;padding:5px 8px;font-size:8.5px}
+ .create-page textarea.field{height:47px;min-height:47px;padding-top:9px}
+ .create-page .icon-field>span{left:10px;font-size:13px}.create-page .icon-field .field{padding-left:31px}
+ .create-page .textarea-icon>span{top:11px;font-size:12px}
+ .create-page .category-select{margin-top:3px}.create-page .chips{margin-top:3px!important;gap:3px}
+ .create-page .chip{font-size:8px;padding:3px 7px;line-height:12px;gap:8px}.create-page .chip span{font-size:11px}
+ .create-page .dynamic-add{margin-top:3px}.create-page .dynamic-add .btn{height:25px;min-height:25px;min-width:67px;padding:4px 7px;font-size:8px}
+ .create-page .dynamic-list{margin-top:3px;gap:2px}.create-page .dynamic-row{height:20px;min-height:20px;padding:2px 7px;font-size:8px}.create-page .dynamic-row button{font-size:11px}
+ .create-page .area-help{margin:2px 0}.create-page .phone-field{height:27px;grid-template-columns:31px 51px minmax(0,1fr)}
+ .create-page .phone-field .wa-icon{font-size:14px}.create-page .phone-prefix{font-size:8.5px;padding-left:6px}
+ .create-page .section-help{margin-top:2px}.create-page .continue-button{height:31px;min-height:31px;font-size:9px;padding:5px 10px}.create-page .continue-button span{top:2px;font-size:20px}
+ .create-page .next-note{font-size:7px!important;margin-top:2px!important}
+}
