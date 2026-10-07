@@ -1,0 +1,41 @@
+/* Limited internal-page consistency. Home, auth, camera and artwork are excluded. */
+:root{--internal-top:12px;--internal-nav-height:44px;--internal-title-gap:6px;--internal-content-gap:12px;--internal-back-color:#4d3042}
+html:has(>body.beauty-mode):not(:has(>body.auth-mode)),
+body.beauty-mode:not(.auth-mode){background:var(--cream)}
+body.beauty-mode .beauty-shell .beauty-head{
+ display:grid;grid-template-columns:44px minmax(0,1fr);grid-template-rows:44px auto;
+ align-items:start;gap:var(--internal-title-gap) 0;
+ padding:var(--internal-top) 0 var(--internal-content-gap);margin:0
+}
+body.beauty-mode .beauty-head>.back{grid-column:1;grid-row:1}
+body.beauty-mode .beauty-head>div{grid-column:1/-1;grid-row:2}
+body.beauty-mode .poetry-page,body.beauty-mode .horoscope-page{padding-top:var(--internal-top)}
+body.beauty-mode .poetry-page .poetry-header,
+body.beauty-mode .horoscope-page .horo-head,
+body.beauty-mode .account-header{
+ height:var(--internal-nav-height);min-height:var(--internal-nav-height);
+ padding:0;margin:0 0 var(--internal-title-gap);align-items:center
+}
+body.beauty-mode .account-header{margin-top:var(--internal-top)}
+body.beauty-mode .poetry-page .poetry-intro,
+body.beauty-mode .horoscope-page .horo-title-block,
+body.beauty-mode .account-page-title{margin:0 0 var(--internal-content-gap)}
+body.beauty-mode .beauty-head>.back,
+body.beauty-mode .poetry-header>.poetry-back,
+body.beauty-mode .horo-head>.horo-back{
+ width:44px;height:44px;min-width:44px;padding:0;border:0;border-radius:0;
+ display:grid;place-items:center;background:transparent;box-shadow:none;
+ color:var(--internal-back-color);cursor:pointer;line-height:1
+}
+body.beauty-mode .beauty-head .internal-back-icon,
+body.beauty-mode .horo-head .internal-back-icon,
+body.beauty-mode .poetry-back .poetry-icon{width:24px;height:24px}
+/* Keep selected zodiac/CTA/medallion/insight accent colors independent. */
+.horoscope-page .language-tabs,
+.horoscope-page .zodiac-card:not(.selected),
+.horoscope-page .selected-zodiac-summary,
+.horoscope-page .sign-identity,
+.horoscope-page .reading-card,
+.horoscope-page .insight-card,
+.horoscope-page .lucky-card{background:var(--card)}
+body.beauty-mode .poetry-back .poetry-icon{stroke-width:1.8}
