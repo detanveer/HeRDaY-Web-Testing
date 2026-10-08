@@ -1,0 +1,144 @@
+/* HerDay Moderator / Moderation — scoped styles.
+   Tokens: canvas #FFF8FA, primary #E91E63 -> #EC1971, secondary #FFFFFF / #E8B9CC / #C91656.
+   All sizes are content-driven; nothing relies on screenshot coordinates. */
+
+/* ---- management page shell (sans header per approved management screens) ---- */
+.mod-screen{--hm-ink:#1c0a1a;--hm-muted:#8a7a86;--hm-line:#f2dce5;--hm-pink:#e91e63;--hm-pink-dark:#c91656;--hm-soft:#fce9f1;--hm-lav:#f7e9f8;font-family:Poppins,system-ui,-apple-system,"Segoe UI",sans-serif}
+.mod-screen .beauty-head{padding:20px 2px 14px;gap:14px;align-items:center}
+.mod-screen .beauty-head h1{font-family:Poppins,system-ui,sans-serif;font-weight:700;font-size:25px;line-height:1.2;color:var(--hm-ink)}
+.mod-screen .beauty-head p{font-size:14px;color:var(--hm-muted);margin-top:3px}
+.mod-screen .beauty-head>div{min-width:0}
+#beautyApp.mod-screen .beauty-head h1,#beautyApp.mod-screen h2,#beautyApp.mod-screen h3{font-family:Poppins,system-ui,-apple-system,"Segoe UI",sans-serif;font-weight:700}
+:where(.mod-screen,.hm-modal) p{white-space:normal;line-height:1.5;font-family:Poppins,system-ui,sans-serif}
+.hm-wrap{padding:0 0 8px;min-width:0}
+.hm-h2{font-size:19px;font-weight:700;color:var(--hm-ink);margin:26px 0 12px;line-height:1.25}
+.hm-h2.lg{font-size:21px}
+.hm-lead{margin:-6px 0 14px;color:var(--hm-muted);font-size:14px}
+.hm-note{margin:10px 2px 0;color:var(--hm-muted);font-size:13px;line-height:1.5}
+.hm-state{padding:40px 8px;text-align:center;color:var(--hm-muted)}
+.hm-chev{width:18px;height:18px;flex:none;fill:none;stroke:var(--hm-pink);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;vertical-align:-3px}
+
+/* ---- cards ---- */
+.hm-card{background:#fffdfd;border:1px solid var(--hm-line);border-radius:17px;padding:16px;margin:0 0 12px;box-shadow:0 2px 10px #7d24440a;min-width:0}
+.hm-empty{color:var(--hm-muted);font-size:14px;line-height:1.5;text-align:center;padding:22px 16px}
+.hm-error{padding:14px 16px;margin:0 0 12px;color:#9b1844;background:#fffdfd;border:1px solid #e8b9cc;border-radius:14px;font-size:14px;overflow-wrap:anywhere}
+
+/* ---- avatar / badges ---- */
+.hm-avatar{flex:none;width:46px;height:46px;border-radius:50%;background:#fbe4ee;display:inline-grid;place-items:center;overflow:hidden}
+.hm-avatar.lg{width:64px;height:64px;background:#ece5ea}
+.hm-avatar svg{width:56%;height:56%;fill:#b79bab}
+.hm-avatar img{width:100%;height:100%;object-fit:cover}
+.hm-role{display:inline-block;margin-top:5px;padding:4px 12px;border-radius:999px;background:var(--hm-soft);color:var(--hm-pink-dark);font-size:12.5px}
+.hm-name{display:block;font-size:16px;font-weight:600;color:var(--hm-ink);overflow-wrap:anywhere}
+.hm-pending{flex:none;align-self:start;padding:6px 12px;border-radius:999px;background:#fde8ef;color:#d81b60;font-size:12.5px;white-space:nowrap}
+.hm-cat{display:inline-block;padding:4px 11px;border-radius:999px;background:var(--hm-lav);color:#6f2a52;font-size:12.5px;overflow-wrap:anywhere}
+.hm-count{display:inline-block;margin-top:10px;padding:5px 12px;border-radius:999px;background:var(--hm-soft);color:var(--hm-pink-dark);font-size:13px;font-weight:600}
+.hm-active{display:block;margin-top:6px;color:#1c8f4e;font-size:13px}
+.hm-blocked{display:block;margin-top:6px;color:#b0264f;font-size:13px}
+
+/* ---- buttons ---- */
+.hm-btn{box-sizing:border-box;min-height:46px;padding:10px 14px;border-radius:13px;border:1.5px solid transparent;font:600 15px Poppins,system-ui,sans-serif;cursor:pointer;width:100%;max-width:none;margin:0}
+.hm-btn.primary{background:linear-gradient(90deg,#e91e63,#ec1971);color:#fff}
+.hm-btn.secondary{background:#fff;border-color:#e8b9cc;color:#c91656}
+.hm-btn:disabled{opacity:.4;cursor:not-allowed}
+.hm-btn:focus-visible,.hm-switch:focus-visible,.hm-view:focus-visible,.hm-tool:focus-visible,.hm-act:focus-visible,.hm-tabs button:focus-visible{outline:3px solid #f6a6c4;outline-offset:2px}
+.hm-actions{display:flex;gap:12px;margin-top:16px}
+.hm-actions .hm-btn{flex:1;min-width:0}
+
+/* ---- submission card ---- */
+.hm-author{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:12px;align-items:start}
+.hm-who{min-width:0;padding-top:1px}
+.hm-who .hm-name{font-weight:500;font-size:15.5px}
+.hm-sub{display:flex;flex-wrap:wrap;gap:6px 9px;align-items:center;margin-top:5px}
+.hm-time{color:var(--hm-muted);font-size:13px}
+.hm-title{font-size:17.5px;font-weight:700;color:var(--hm-ink);margin:16px 0 8px;line-height:1.35;overflow-wrap:anywhere}
+.hm-preview{margin:0;color:#8c7e89;font-size:14.5px;line-height:1.6;white-space:pre-line;overflow-wrap:anywhere;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.hm-preview.dark{color:#4a3a46}
+.hm-plain-cat{margin:0 0 10px;color:var(--hm-muted);font-size:13.5px}
+.hm-view{display:inline-flex;align-items:center;gap:6px;margin:14px 0 0;padding:6px 0;border:0;background:none;color:var(--hm-pink);font:500 15px Poppins,system-ui,sans-serif;cursor:pointer}
+.hm-full{white-space:pre-wrap;unicode-bidi:plaintext;color:#3d2b38;font-size:15.5px;line-height:1.75;overflow-wrap:anywhere}
+
+/* ---- Moderator Tools ---- */
+.hm-identity{display:flex;align-items:center;gap:16px;padding:16px}
+.hm-identity p{margin:7px 0 0;color:var(--hm-muted);font-size:13px;line-height:1.45}
+.hm-identity>div{min-width:0}
+.hm-tool,.hm-act{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;text-align:left;background:#fffdfd;border:1px solid var(--hm-line);border-radius:17px;padding:16px;margin:0 0 12px;cursor:pointer;color:inherit;font:inherit;box-shadow:0 2px 10px #7d24440a}
+.hm-tool>div,.hm-act>div{min-width:0}
+.hm-tool h3{margin:0 0 4px;font-size:17px;font-weight:700;color:var(--hm-ink)}
+.hm-tool p{margin:0;color:var(--hm-muted);font-size:14px;line-height:1.45}
+.hm-activity{padding:0;overflow:hidden}
+.hm-act{border:0;border-radius:0;margin:0;box-shadow:none;background:none}
+.hm-act+.hm-act{border-top:1px solid var(--hm-line)}
+.hm-act b{display:block;font-size:15.5px;color:var(--hm-ink)}
+.hm-act span{display:block;margin-top:3px;color:var(--hm-muted);font-size:13.5px}
+
+/* ---- User Management ---- */
+.hm-tabs{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--hm-line);margin-top:2px}
+.hm-tabs button{padding:13px 4px;border:0;border-bottom:3px solid transparent;margin-bottom:-1px;background:none;color:var(--hm-muted);font:400 16px Poppins,system-ui,sans-serif;cursor:pointer}
+.hm-tabs button.on{color:var(--hm-pink);border-bottom-color:var(--hm-pink);font-weight:600}
+.hm-search{display:flex;align-items:center;gap:10px;box-sizing:border-box;padding:0 16px;margin:0 0 14px;min-height:50px;background:#fffdfd;border:1px solid #e8d4dd;border-radius:14px}
+.hm-search input{flex:1;min-width:0;border:0;outline:0;background:none;font:400 15px Poppins,system-ui,sans-serif;color:var(--hm-ink);padding:12px 0}
+.hm-search svg{width:21px;height:21px;flex:none;fill:none;stroke:#3d2b38;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.hm-search:focus-within{border-color:#df7fa6}
+.hm-user{cursor:pointer}
+.hm-user.selected{border-color:#e8a3c0}
+.hm-user-top{display:flex;gap:16px;align-items:center;margin-bottom:14px}
+.hm-user-top>div{min-width:0}
+.hm-perm{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:15px 16px}
+.hm-perm>div{min-width:0}
+.hm-perm h3{margin:0 0 4px;font-size:16px;font-weight:700;color:var(--hm-ink)}
+.hm-perm p{margin:0;color:var(--hm-muted);font-size:13.5px;line-height:1.45}
+.hm-switch{flex:none;position:relative;width:52px;height:30px;border-radius:999px;border:0;background:#d8c7d1;cursor:pointer;padding:0;transition:background .15s}
+.hm-switch span{position:absolute;top:3px;left:3px;width:24px;height:24px;border-radius:50%;background:#fff;box-shadow:0 1px 3px #0003;transition:transform .15s}
+.hm-switch.on{background:#df1a6b}
+.hm-switch.on span{transform:translateX(22px)}
+.hm-switch:disabled{opacity:.6;cursor:progress}
+
+/* ---- Poetry Management ---- */
+.hm-add{display:flex;gap:12px;align-items:stretch;margin:0 0 4px}
+.hm-add .hm-btn{width:auto;min-width:92px;flex:none}
+.hm-input{box-sizing:border-box;flex:1;min-width:0;width:100%;min-height:50px;padding:12px 16px;border:1px solid #e8d4dd;border-radius:14px;background:#fffdfd;font:400 15px Poppins,system-ui,sans-serif;color:var(--hm-ink);outline:0}
+.hm-input:focus{border-color:#df7fa6}
+.hm-cat-row{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;padding:12px 16px}
+.hm-cat-name{font-size:16px;color:var(--hm-ink);overflow-wrap:anywhere;min-width:0}
+.hm-cat-acts{display:flex;align-items:center;gap:12px;margin-left:auto}
+.hm-cat-acts i{width:1px;height:22px;background:#e8d4dd}
+.hm-cat-acts button{display:inline-flex;align-items:center;gap:7px;border:0;background:none;color:var(--hm-pink);font:400 14.5px Poppins,system-ui,sans-serif;cursor:pointer;padding:8px 2px}
+.hm-cat-acts svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+
+/* ---- modal (centered; used for reject / approve / confirmations) ---- */
+.hm-modal-backdrop{position:fixed;inset:0;z-index:1100;display:grid;place-items:center;padding:16px;box-sizing:border-box;background:rgba(40,20,34,.55);font-family:Poppins,system-ui,sans-serif}
+.hm-modal{box-sizing:border-box;width:100%;max-width:420px;max-height:calc(100dvh - 32px);overflow:auto;background:#fffdfd;border-radius:20px;padding:22px 20px 20px;box-shadow:0 12px 40px #3b123340;color:var(--hm-ink,#1c0a1a)}
+.hm-modal h2{font-family:Poppins,system-ui,sans-serif;margin:0 0 8px;font-size:21px;font-weight:700;line-height:1.25}
+.hm-modal p{margin:0 0 16px;color:#8a7a86;font-size:14.5px;line-height:1.5}
+.hm-modal .hm-lbl{display:block;margin:4px 0 8px;font-size:14px;font-weight:600;color:#3d2b38}
+.hm-reasons{display:grid;gap:4px;margin:2px 0 14px}
+.hm-radio{display:flex;align-items:center;gap:14px;min-height:46px;padding:4px 2px;cursor:pointer;font-size:15px;color:#3d2b38}
+.hm-radio input{position:absolute;opacity:0;width:1px;height:1px}
+.hm-dot{flex:none;width:22px;height:22px;border-radius:50%;border:2px solid #cfc4cb;box-sizing:border-box;display:grid;place-items:center}
+.hm-radio input:checked+.hm-dot{border-color:#e91e63}
+.hm-radio input:checked+.hm-dot::after{content:"";width:11px;height:11px;border-radius:50%;background:#e91e63}
+.hm-radio input:focus-visible+.hm-dot{outline:3px solid #f6a6c4;outline-offset:2px}
+.hm-other{box-sizing:border-box;width:100%;min-height:92px;margin:0 0 12px;padding:12px 14px;border:1px solid #e8d4dd;border-radius:14px;font:400 15px Poppins,system-ui,sans-serif;color:#1c0a1a;resize:vertical;outline:0}
+.hm-other:focus{border-color:#df7fa6}
+.hm-modal-err{margin:0 0 12px!important;color:#b0264f!important;font-size:13.5px!important}
+.hm-modal-actions{display:flex;gap:12px;margin-top:6px}
+.hm-modal-actions .hm-btn{flex:1;min-width:0}
+.hm-toast{position:fixed;left:50%;bottom:calc(96px + env(safe-area-inset-bottom));transform:translateX(-50%);z-index:1200;max-width:calc(100vw - 32px);padding:12px 18px;border-radius:999px;background:#3b1b33;color:#fff;font:500 14px Poppins,system-ui,sans-serif;box-shadow:0 6px 20px #0003}
+
+/* ---- Profile entry (Moderator role): matches Profile's serif/soft-shadow variant ---- */
+.mod-role-badge{display:inline-block;margin-top:6px;padding:4px 14px;border-radius:999px;background:#fdeaf2;color:#c91656;font-size:13px}
+.hm-tools-entry{display:flex;align-items:center;gap:16px;width:100%;box-sizing:border-box;margin:14px 0;padding:16px;text-align:left;background:#fffdfd;border:1px solid #f0dde6;border-radius:26px;box-shadow:0 6px 18px #7d244422;cursor:pointer;color:inherit;font:inherit}
+.hm-tools-icon{flex:none;width:52px;height:52px;border-radius:50%;background:#fdebf2;color:#e91e63;display:grid;place-items:center;font-size:19px}
+.hm-tools-entry>div{flex:1;min-width:0}
+.hm-tools-entry h3{margin:0 0 4px;font-family:DMSerif,Georgia,serif;font-weight:400;font-size:21px;color:#4d1038}
+.hm-tools-entry p{margin:0;color:#857784;font-size:14px;line-height:1.4}
+.hm-tools-entry i{font-style:normal;font-size:26px;color:#e91e63;line-height:1}
+
+@media (max-width:360px){
+  .mod-screen .beauty-head h1{font-size:22px}
+  .hm-author{grid-template-columns:auto minmax(0,1fr)}
+  .hm-pending{grid-column:1 / -1;justify-self:start}
+  .hm-actions,.hm-modal-actions{flex-direction:column}
+}
+@media (prefers-reduced-motion:reduce){.hm-switch,.hm-switch span{transition:none}}
