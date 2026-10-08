@@ -1,0 +1,47 @@
+HERDAY R2 — WEB TEST + NATIVE ANDROID HANDOFF
+Date: 2026-10-08
+Baseline: HerDay-Web-Six-Limited-Corrections.zip
+Scope: isolated opt-in R2 test harness, no production media migration.
+
+CONFIRMED FROM USER SCREENSHOTS (not independent live verification):
+- Cloudflare Worker deployment active; editor showed zero diagnostics.
+- /health returned ok:true, service:herday-media-api.
+- Protected endpoint without bearer token returned Authentication required.
+- R2 buckets exist and bindings shown, but complete binding names not independently checked.
+
+IMPLEMENTED IN THIS PACKAGE:
+- r2-test.html and r2-test.js, isolated manual test page.
+- Reuses existing browser Supabase session through same project/client configuration.
+- Health request GET /health.
+- Explicit button for authenticated multipart POST /v1/upload, section=profile, max 5 MB.
+- Explicit button for authenticated GET /v1/private?key=... and preview of returned private image.
+- No service-role key in client. No token logging. No automatic uploads.
+- Existing beauty.js, index.html, account/Beauty upload flows and Supabase Storage unchanged.
+- Approved page canvas #FFF8FA, test surface #FFFDFD, CTA gradient #E91E63 to #EC1971.
+
+NOT VERIFIED / PENDING:
+- This package was not deployed to GitHub Pages or production.
+- Worker authenticated JWT validation and active-user RPC not yet exercised.
+- Worker actual URL and its exact hostname must be confirmed (r2-test.js has an assumed address based on screenshots).
+- Worker ALLOWED_ORIGINS must allow the ACTUAL web origin (e.g. GitHub Pages origin) before browser fetch; do not weaken CORS to wildcard.
+- POST /v1/upload and GET /v1/private require live testing with a logged-in account.
+- Test uploads persist in private R2; no delete endpoint in Worker. Use a disposable image and reconcile later if needed.
+- Submission media registration, moderation-approved publishing, public R2 delivery, security/role enforcement, rollback and Native Android are NOT verified.
+- A green /health and unauthenticated 401 do NOT verify full R2 functionality.
+
+MANUAL TEST PLAN:
+1. Verify deployed Worker URL and exact origin allowlist, without changing production rules blindly.
+2. Publish the isolated test files to the same web origin as HerDay, or serve them in a trusted staging origin explicitly allowlisted.
+3. Sign into HerDay on that exact origin/browser; open r2-test.html.
+4. Check health. Upload one disposable profile image. Confirm 201, key, private status.
+5. Read private image. Confirm 200 and correct pixels.
+6. Separately test missing token, invalid token, cross-user private key, oversized/nonimage files, and disallowed origin; never share tokens.
+7. Only after documented passes consider scoped Web/Native media integration.
+
+NATIVE ANDROID REUSE:
+- Kotlin should call Worker endpoints with Supabase access JWT in Authorization Bearer.
+- Upload uses multipart fields section=profile|poetry|explore|girls_space and file.
+- Protected private reads require bearer JWT and ownership checks.
+- Non-profile media stays pending until moderation approval and approved-manifest publication.
+- Do not assume production verification from this static harness.
+- Keep HerDay Native Compose UI and locked features untouched.
