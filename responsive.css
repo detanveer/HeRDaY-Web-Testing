@@ -1,0 +1,22 @@
+@font-face{font-family:"KalamHerDay";src:url("kalam_regular.ttf") format("truetype");font-style:normal;font-weight:400;font-display:block}
+@font-face{font-family:"KalamHerDay";src:url("kalam_bold.ttf") format("truetype");font-style:normal;font-weight:700;font-display:block}
+@font-face{font-family:DMSerif;src:url("dm_serif_display_regular.ttf") format("truetype");font-display:swap}
+@font-face{font-family:Poppins;src:url("poppins_regular.ttf") format("truetype");font-display:swap}
+:root{--cw:92vw;--bg:#fff8fa}*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:#3f2734;font-family:Poppins,sans-serif}
+body{padding-bottom:92px}.page{width:100%;min-height:100vh;background:var(--bg)}.header,.content{width:var(--cw);margin-inline:auto}
+.header{height:74px;display:flex;align-items:center;justify-content:space-between}.logo{width:88px;height:auto}.bell{width:31px;height:31px;object-fit:contain}
+.hero{position:relative;width:100%;aspect-ratio:882/512;border-radius:16px;overflow:hidden}.hero>img{width:100%;height:100%;object-fit:contain;display:block}
+.hero::after{content:"";position:absolute;z-index:1;left:2.983539%;top:18.2%;width:34.979424%;height:41.6%;border-radius:7.058824%;background:rgba(252,232,239,.737255);-webkit-mask-image:linear-gradient(to right,transparent 0,#000 7.058824%,#000 92.941176%,transparent 100%),linear-gradient(to bottom,transparent 0,#000 11.538462%,#000 88.461538%,transparent 100%);-webkit-mask-composite:source-in;mask-image:linear-gradient(to right,transparent 0,#000 7.058824%,#000 92.941176%,transparent 100%),linear-gradient(to bottom,transparent 0,#000 11.538462%,#000 88.461538%,transparent 100%);mask-composite:intersect;pointer-events:none}
+.heroText{position:absolute;inset:0;z-index:2;width:100%;height:100%;display:block;pointer-events:none;overflow:visible}
+.heroText text{fill:#3f2734;font-family:"KalamHerDay";font-style:normal;letter-spacing:0}
+.heroText .regular{font-weight:400}.heroText .bold{font-weight:700}
+.grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px 8px;margin-top:9px}.span2{grid-column:1/-1}
+.card{min-width:0;background:white;border-radius:14px;overflow:hidden;box-shadow:0 2px 8px #7d526012}.card .art{display:block;width:100%;aspect-ratio:431/344;object-fit:contain;background:#fbeff4}.card.wide .art{aspect-ratio:882/346}
+.strip{height:55px;display:flex;align-items:center;padding:6px 7px;gap:6px}.ico{width:34px;height:34px;object-fit:contain;flex:none}.copy{min-width:0;flex:1}
+h2{font:15px/17px DMSerif;margin:0;white-space:nowrap}p{font:8.5px/12px Poppins;margin:1px 0 0;white-space:nowrap}.chev{font-size:22px;color:#b98aa2}
+.girls-space-card .copy{min-width:0}.girls-space-card p{transform:translateY(3px);white-space:normal;overflow-wrap:normal;max-width:100%;font-size:clamp(7px,2vw,8.5px);line-height:10px}
+.nav{position:fixed;z-index:20;bottom:max(8px,env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);width:var(--cw);height:66px;border-radius:18px;background:#fff;box-shadow:0 5px 22px #5e334522;display:grid;grid-template-columns:repeat(5,1fr);align-items:center}
+.nav div{display:flex;flex-direction:column;align-items:center;gap:1px;font-size:8px}.nav img{width:30px;height:30px;object-fit:contain}
+@media(min-width:700px){:root{--cw:520px}.header,.content,.nav{max-width:520px}}
+/* Title-only alignment; offset measured from the rendered Poetry title. */
+#homePage .girls-space-card h2{transform:translateY(var(--girls-title-offset,0px))}
