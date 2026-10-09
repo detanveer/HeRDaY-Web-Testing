@@ -1,0 +1,402 @@
+/* HerDay Moderator / Moderation — scoped styles.
+   Tokens: canvas #FFF8FA, primary #E91E63 -> #EC1971, secondary #FFFFFF / #E8B9CC / #C91656.
+   All sizes are content-driven; nothing relies on screenshot coordinates. */
+
+/* ---- management page shell (sans header per approved management screens) ---- */
+.mod-screen{--hm-ink:#1c0a1a;--hm-muted:#8a7a86;--hm-line:#f2dce5;--hm-pink:#e91e63;--hm-pink-dark:#c91656;--hm-soft:#fce9f1;--hm-lav:#f7e9f8;font-family:Poppins,system-ui,-apple-system,"Segoe UI",sans-serif}
+.mod-screen .beauty-head{padding:20px 2px 14px;gap:14px;align-items:center}
+.mod-screen .beauty-head h1{font-family:Poppins,system-ui,sans-serif;font-weight:700;font-size:25px;line-height:1.2;color:var(--hm-ink)}
+.mod-screen .beauty-head p{font-size:14px;color:var(--hm-muted);margin-top:3px}
+.mod-screen .beauty-head>div{min-width:0}
+#beautyApp.mod-screen .beauty-head h1,#beautyApp.mod-screen h2,#beautyApp.mod-screen h3{font-family:Poppins,system-ui,-apple-system,"Segoe UI",sans-serif;font-weight:700}
+:where(.mod-screen,.hm-modal) p{white-space:normal;line-height:1.5;font-family:Poppins,system-ui,sans-serif}
+.hm-wrap{padding:0 0 8px;min-width:0}
+.hm-h2{font-size:19px;font-weight:700;color:var(--hm-ink);margin:26px 0 12px;line-height:1.25}
+.hm-h2.lg{font-size:21px}
+.hm-lead{margin:-6px 0 14px;color:var(--hm-muted);font-size:14px}
+.hm-note{margin:10px 2px 0;color:var(--hm-muted);font-size:13px;line-height:1.5}
+.hm-state{padding:40px 8px;text-align:center;color:var(--hm-muted)}
+.hm-chev{width:18px;height:18px;flex:none;fill:none;stroke:var(--hm-pink);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;vertical-align:-3px}
+
+/* ---- cards ---- */
+.hm-card{background:#fffdfd;border:1px solid var(--hm-line);border-radius:17px;padding:16px;margin:0 0 12px;box-shadow:0 2px 10px #7d24440a;min-width:0}
+.hm-empty{color:var(--hm-muted);font-size:14px;line-height:1.5;text-align:center;padding:22px 16px}
+.hm-error{padding:14px 16px;margin:0 0 12px;color:#9b1844;background:#fffdfd;border:1px solid #e8b9cc;border-radius:14px;font-size:14px;overflow-wrap:anywhere}
+
+/* ---- avatar / badges ---- */
+.hm-avatar{flex:none;width:46px;height:46px;border-radius:50%;background:#fbe4ee;display:inline-grid;place-items:center;overflow:hidden}
+.hm-avatar.lg{width:64px;height:64px;background:#ece5ea}
+.hm-avatar svg{width:56%;height:56%;fill:#b79bab}
+.hm-avatar img{width:100%;height:100%;object-fit:cover}
+.hm-role{display:inline-block;margin-top:5px;padding:4px 12px;border-radius:999px;background:var(--hm-soft);color:var(--hm-pink-dark);font-size:12.5px}
+.hm-name{display:block;font-size:16px;font-weight:600;color:var(--hm-ink);overflow-wrap:anywhere}
+.hm-pending{flex:none;align-self:start;padding:6px 12px;border-radius:999px;background:#fde8ef;color:#d81b60;font-size:12.5px;white-space:nowrap}
+.hm-cat{display:inline-block;padding:4px 11px;border-radius:999px;background:var(--hm-lav);color:#6f2a52;font-size:12.5px;overflow-wrap:anywhere}
+.hm-count{display:inline-block;margin-top:10px;padding:5px 12px;border-radius:999px;background:var(--hm-soft);color:var(--hm-pink-dark);font-size:13px;font-weight:600}
+.hm-active{display:block;margin-top:6px;color:#1c8f4e;font-size:13px}
+.hm-blocked{display:block;margin-top:6px;color:#b0264f;font-size:13px}
+
+/* ---- buttons ---- */
+.hm-btn{box-sizing:border-box;min-height:46px;padding:10px 14px;border-radius:13px;border:1.5px solid transparent;font:600 15px Poppins,system-ui,sans-serif;cursor:pointer;width:100%;max-width:none;margin:0}
+.hm-btn.primary{background:linear-gradient(90deg,#e91e63,#ec1971);color:#fff}
+.hm-btn.secondary{background:#fff;border-color:#e8b9cc;color:#c91656}
+.hm-btn:disabled{opacity:.4;cursor:not-allowed}
+.hm-btn:focus-visible,.hm-switch:focus-visible,.hm-view:focus-visible,.hm-tool:focus-visible,.hm-act:focus-visible,.hm-tabs button:focus-visible{outline:3px solid #f6a6c4;outline-offset:2px}
+.hm-actions{display:flex;gap:12px;margin-top:16px}
+.hm-actions .hm-btn{flex:1;min-width:0}
+
+/* ---- submission card ---- */
+.hm-author{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:12px;align-items:start}
+.hm-who{min-width:0;padding-top:1px}
+.hm-who .hm-name{font-weight:500;font-size:15.5px}
+.hm-sub{display:flex;flex-wrap:wrap;gap:6px 9px;align-items:center;margin-top:5px}
+.hm-time{color:var(--hm-muted);font-size:13px}
+.hm-title{font-size:17.5px;font-weight:700;color:var(--hm-ink);margin:16px 0 8px;line-height:1.35;overflow-wrap:anywhere}
+.hm-preview{margin:0;color:#8c7e89;font-size:14.5px;line-height:1.6;white-space:pre-line;overflow-wrap:anywhere;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.hm-preview.dark{color:#4a3a46}
+.hm-plain-cat{margin:0 0 10px;color:var(--hm-muted);font-size:13.5px}
+.hm-view{display:inline-flex;align-items:center;gap:6px;margin:14px 0 0;padding:6px 0;border:0;background:none;color:var(--hm-pink);font:500 15px Poppins,system-ui,sans-serif;cursor:pointer}
+.hm-full{white-space:pre-wrap;unicode-bidi:plaintext;color:#3d2b38;font-size:15.5px;line-height:1.75;overflow-wrap:anywhere}
+
+/* ---- Moderator Tools ---- */
+.hm-identity{display:flex;align-items:center;gap:16px;padding:16px}
+.hm-identity p{margin:7px 0 0;color:var(--hm-muted);font-size:13px;line-height:1.45}
+.hm-identity>div{min-width:0}
+.hm-tool,.hm-act{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;text-align:left;background:#fffdfd;border:1px solid var(--hm-line);border-radius:17px;padding:16px;margin:0 0 12px;cursor:pointer;color:inherit;font:inherit;box-shadow:0 2px 10px #7d24440a}
+.hm-tool>div,.hm-act>div{min-width:0}
+.hm-tool h3{margin:0 0 4px;font-size:17px;font-weight:700;color:var(--hm-ink)}
+.hm-tool p{margin:0;color:var(--hm-muted);font-size:14px;line-height:1.45}
+.hm-activity{padding:0;overflow:hidden}
+.hm-act{border:0;border-radius:0;margin:0;box-shadow:none;background:none}
+.hm-act+.hm-act{border-top:1px solid var(--hm-line)}
+.hm-act b{display:block;font-size:15.5px;color:var(--hm-ink)}
+.hm-act span{display:block;margin-top:3px;color:var(--hm-muted);font-size:13.5px}
+
+/* ---- User Management ---- */
+.hm-tabs{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--hm-line);margin-top:2px}
+.hm-tabs button{padding:13px 4px;border:0;border-bottom:3px solid transparent;margin-bottom:-1px;background:none;color:var(--hm-muted);font:400 16px Poppins,system-ui,sans-serif;cursor:pointer}
+.hm-tabs button.on{color:var(--hm-pink);border-bottom-color:var(--hm-pink);font-weight:600}
+.hm-search{display:flex;align-items:center;gap:10px;box-sizing:border-box;padding:0 16px;margin:0 0 14px;min-height:50px;background:#fffdfd;border:1px solid #e8d4dd;border-radius:14px}
+.hm-search input{flex:1;min-width:0;border:0;outline:0;background:none;font:400 15px Poppins,system-ui,sans-serif;color:var(--hm-ink);padding:12px 0}
+.hm-search svg{width:21px;height:21px;flex:none;fill:none;stroke:#3d2b38;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.hm-search:focus-within{border-color:#df7fa6}
+.hm-user{cursor:pointer}
+.hm-user.selected{border-color:#e8a3c0}
+.hm-user-top{display:flex;gap:16px;align-items:center;margin-bottom:14px}
+.hm-user-top>div{min-width:0}
+.hm-perm{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:15px 16px}
+.hm-perm>div{min-width:0}
+.hm-perm h3{margin:0 0 4px;font-size:16px;font-weight:700;color:var(--hm-ink)}
+.hm-perm p{margin:0;color:var(--hm-muted);font-size:13.5px;line-height:1.45}
+.hm-switch{flex:none;position:relative;width:52px;height:30px;border-radius:999px;border:0;background:#d8c7d1;cursor:pointer;padding:0;transition:background .15s}
+.hm-switch span{position:absolute;top:3px;left:3px;width:24px;height:24px;border-radius:50%;background:#fff;box-shadow:0 1px 3px #0003;transition:transform .15s}
+.hm-switch.on{background:#df1a6b}
+.hm-switch.on span{transform:translateX(22px)}
+.hm-switch:disabled{opacity:.6;cursor:progress}
+
+/* ---- Poetry Management ---- */
+.hm-add{display:flex;gap:12px;align-items:stretch;margin:0 0 4px}
+.hm-add .hm-btn{width:auto;min-width:92px;flex:none}
+.hm-input{box-sizing:border-box;flex:1;min-width:0;width:100%;min-height:50px;padding:12px 16px;border:1px solid #e8d4dd;border-radius:14px;background:#fffdfd;font:400 15px Poppins,system-ui,sans-serif;color:var(--hm-ink);outline:0}
+.hm-input:focus{border-color:#df7fa6}
+.hm-cat-row{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;padding:12px 16px}
+.hm-cat-name{font-size:16px;color:var(--hm-ink);overflow-wrap:anywhere;min-width:0}
+.hm-cat-acts{display:flex;align-items:center;gap:12px;margin-left:auto}
+.hm-cat-acts i{width:1px;height:22px;background:#e8d4dd}
+.hm-cat-acts button{display:inline-flex;align-items:center;gap:7px;border:0;background:none;color:var(--hm-pink);font:400 14.5px Poppins,system-ui,sans-serif;cursor:pointer;padding:8px 2px}
+.hm-cat-acts svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+
+/* ---- modal (centered; used for reject / approve / confirmations) ---- */
+.hm-modal-backdrop{position:fixed;inset:0;z-index:1100;display:grid;place-items:center;padding:16px;box-sizing:border-box;background:rgba(40,20,34,.55);font-family:Poppins,system-ui,sans-serif}
+.hm-modal{box-sizing:border-box;width:100%;max-width:420px;max-height:calc(100dvh - 32px);overflow:auto;background:#fffdfd;border-radius:20px;padding:22px 20px 20px;box-shadow:0 12px 40px #3b123340;color:var(--hm-ink,#1c0a1a)}
+.hm-modal h2{font-family:Poppins,system-ui,sans-serif;margin:0 0 8px;font-size:21px;font-weight:700;line-height:1.25}
+.hm-modal p{margin:0 0 16px;color:#8a7a86;font-size:14.5px;line-height:1.5}
+.hm-modal .hm-lbl{display:block;margin:4px 0 8px;font-size:14px;font-weight:600;color:#3d2b38}
+.hm-reasons{display:grid;gap:4px;margin:2px 0 14px}
+.hm-radio{display:flex;align-items:center;gap:14px;min-height:46px;padding:4px 2px;cursor:pointer;font-size:15px;color:#3d2b38}
+.hm-radio input{position:absolute;opacity:0;width:1px;height:1px}
+.hm-dot{flex:none;width:22px;height:22px;border-radius:50%;border:2px solid #cfc4cb;box-sizing:border-box;display:grid;place-items:center}
+.hm-radio input:checked+.hm-dot{border-color:#e91e63}
+.hm-radio input:checked+.hm-dot::after{content:"";width:11px;height:11px;border-radius:50%;background:#e91e63}
+.hm-radio input:focus-visible+.hm-dot{outline:3px solid #f6a6c4;outline-offset:2px}
+.hm-other{box-sizing:border-box;width:100%;min-height:92px;margin:0 0 12px;padding:12px 14px;border:1px solid #e8d4dd;border-radius:14px;font:400 15px Poppins,system-ui,sans-serif;color:#1c0a1a;resize:vertical;outline:0}
+.hm-other:focus{border-color:#df7fa6}
+.hm-modal-err{margin:0 0 12px!important;color:#b0264f!important;font-size:13.5px!important}
+.hm-modal-actions{display:flex;gap:12px;margin-top:6px}
+.hm-modal-actions .hm-btn{flex:1;min-width:0}
+.hm-toast{position:fixed;left:50%;bottom:calc(96px + env(safe-area-inset-bottom));transform:translateX(-50%);z-index:1200;max-width:calc(100vw - 32px);padding:12px 18px;border-radius:999px;background:#3b1b33;color:#fff;font:500 14px Poppins,system-ui,sans-serif;box-shadow:0 6px 20px #0003}
+
+/* ---- Profile entry (Moderator role): matches Profile's serif/soft-shadow variant ---- */
+.mod-role-badge{display:inline-block;margin-top:6px;padding:4px 14px;border-radius:999px;background:#fdeaf2;color:#c91656;font-size:13px}
+.hm-tools-entry{display:flex;align-items:center;gap:16px;width:100%;box-sizing:border-box;margin:14px 0;padding:16px;text-align:left;background:#fffdfd;border:1px solid #f0dde6;border-radius:26px;box-shadow:0 6px 18px #7d244422;cursor:pointer;color:inherit;font:inherit}
+.hm-tools-icon{flex:none;width:52px;height:52px;border-radius:50%;background:#fdebf2;color:#e91e63;display:grid;place-items:center;font-size:19px}
+.hm-tools-entry>div{flex:1;min-width:0}
+.hm-tools-entry h3{margin:0 0 4px;font-family:DMSerif,Georgia,serif;font-weight:400;font-size:21px;color:#4d1038}
+.hm-tools-entry p{margin:0;color:#857784;font-size:14px;line-height:1.4}
+.hm-tools-entry i{font-style:normal;font-size:26px;color:#e91e63;line-height:1}
+
+@media (max-width:360px){
+  .mod-screen .beauty-head h1{font-size:22px}
+  .hm-author{grid-template-columns:auto minmax(0,1fr)}
+  .hm-pending{grid-column:1 / -1;justify-self:start}
+  .hm-actions,.hm-modal-actions{flex-direction:column}
+}
+@media (prefers-reduced-motion:reduce){.hm-switch,.hm-switch span{transition:none}}
+
+/* ---- Batch 1: modal scroll lock, per-action permission switches ---- */
+html.hm-lock,html.hm-lock body{overflow:hidden}
+.hm-perm{flex-direction:column;align-items:stretch;gap:12px}
+.hm-perm-head{min-width:0}
+.hm-psws{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.hm-psw{display:flex;align-items:center;justify-content:center;gap:7px;min-height:42px;padding:6px 8px;border:1.5px solid #e8d4dd;border-radius:12px;background:#fff;color:#6c5a66;font:500 13px Poppins,system-ui,sans-serif;cursor:pointer}
+.hm-psw-box{flex:none;width:16px;height:16px;border-radius:5px;border:2px solid #cfc4cb;box-sizing:border-box}
+.hm-psw.on{border-color:#e91e63;background:#fdeaf2;color:#c91656}
+.hm-psw.on .hm-psw-box{border-color:#e91e63;background:#e91e63 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='m3.5 8.5 3 3 6-6.5' fill='none' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/contain no-repeat}
+.hm-psw:disabled{opacity:.6;cursor:progress}
+.hm-psw:focus-visible{outline:3px solid #f6a6c4;outline-offset:2px}
+.hm-sumlist{margin:-6px 0 14px;padding-left:20px;color:#3d2b38;font-size:14px;line-height:1.7}
+@media (max-width:360px){.hm-psws{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* ---- Batch 2 ---- */
+.hm-unavail{color:var(--hm-muted,#8a7a86);font-weight:400!important;font-style:italic}
+.hm-count.off{background:#f2eff1;color:#735e68;font-weight:500}
+.hm-more{margin:6px 0 10px}
+.hm-more .hm-btn{margin-top:8px}
+.hm-retry{width:auto;min-width:140px;margin-top:12px}
+
+/* ---- Batch 3 ---- */
+.hm-media{margin:18px 0 4px}
+.hm-media-h{display:flex;justify-content:space-between;gap:10px;margin:0 0 10px;font:600 15px Poppins,system-ui,sans-serif;color:#1c0a1a}
+.hm-media-h span{font-weight:400;font-size:13px;color:#8a7a86}
+.hm-media-grid{display:grid;gap:12px}
+.hm-fig{margin:0;border-radius:14px;overflow:hidden;background:#f7edf1;border:1px solid #f2dce5}
+.hm-fig img{display:block;width:100%;height:auto;max-height:70vh;object-fit:contain;background:#fff}
+.hm-fig.ph{display:grid;place-items:center;min-height:160px;color:#8a7a86;font-size:14px}
+.hm-fig.err{padding:16px;text-align:center;color:#9b1844;background:#fffdfd;border-color:#e8b9cc}
+.hm-fig.err p{margin:0 0 6px;font-size:14px}.hm-fig.err .small{font-size:12.5px;color:#775665;overflow-wrap:anywhere}
+.hm-hint{margin-top:12px}
+.hm-group{min-width:0}
+.hm-sep{margin-top:30px;padding-top:6px;border-top:1px solid #f2dce5}
+.hm-note.hm-first{margin:-4px 2px 14px}
+.hm-h3{margin:20px 0 10px;font-size:16px;font-weight:700;color:#6c5a66}
+.hm-cat-row.archived{background:#faf6f8}
+.hm-cat-row.archived .hm-cat-name{color:#6c5a66}
+.hm-showmore{margin-top:4px}
+
+/* ---- Batch 4: sizing aligned to the approved PNG proportions (ref raster / 2 ≈ CSS px at 420px) ---- */
+.mod-screen .beauty-head h1{font-size:23px}
+.mod-screen .beauty-head p{font-size:14px}
+.hm-h2{font-size:18.5px;margin:24px 0 10px}
+.hm-h2.lg{font-size:20px}
+.hm-card{padding:14px}
+.hm-avatar{width:44px;height:44px}
+.hm-avatar.lg{width:60px;height:60px}
+.hm-author{gap:10px}
+.hm-pending{padding:5px 10px;font-size:12px}
+.hm-time{font-size:12.5px}
+.hm-cat{padding:3px 9px;font-size:12px}
+.hm-sub{gap:4px 7px}
+.hm-who .hm-name,.hm-name{font-size:15.5px}
+.hm-title{font-size:17px;margin:14px 0 6px}
+.hm-preview{font-size:14.5px}
+.hm-view{font-size:15px;margin-top:10px}
+.hm-actions{margin-top:12px}
+.hm-btn{min-height:44px;font-size:15.5px}
+.hm-tool{padding:14px}
+.hm-tool h3{font-size:15.5px}
+.hm-tool p{font-size:13.5px}
+.hm-count{font-size:12px;padding:4px 11px;margin-top:8px}
+.hm-act{padding:14px}
+.hm-act b{font-size:15px}
+.hm-act span{font-size:12.8px}
+.hm-tabs button{font-size:15px;padding:11px 4px}
+.hm-perm h3{font-size:15px}
+.hm-perm p{font-size:13px}
+.hm-modal{width:min(83vw,420px);padding:20px 18px 18px}
+.hm-modal h2{font-size:23px}
+.hm-modal p{font-size:14px}
+.hm-radio{min-height:38px;gap:12px;font-size:15px}
+@media (max-width:360px){.hm-modal{width:min(94vw,420px)}}
+
+/* V2 approved-reference corrections, limited to moderation and Moderator Profile. */
+body.beauty-mode .beauty-shell.mod-screen{width:92.4vw;max-width:520px;padding-bottom:calc(90px + env(safe-area-inset-bottom))}
+body.beauty-mode:has(.mod-screen){padding-bottom:0}
+body.beauty-mode .beauty-shell.mod-screen .beauty-head{display:grid;grid-template-columns:36px minmax(0,1fr);grid-template-rows:auto;gap:8px;align-items:center;padding:16px 0 20px;margin:0}
+body.beauty-mode .beauty-shell.mod-screen .beauty-head>.back{grid-column:1;grid-row:1;width:36px;min-width:36px;height:44px}
+body.beauty-mode .beauty-shell.mod-screen .beauty-head>div{grid-column:2;grid-row:1}
+#beautyApp.mod-screen .beauty-head h1{font-size:22px;font-weight:700;line-height:1.25}
+#beautyApp.mod-screen .beauty-head p{font-size:13px;line-height:1.45;margin:4px 0 0}
+.mod-screen .hm-h2{margin:22px 0 12px;font-size:20px;line-height:1.25}
+.mod-screen .hm-h2.lg{font-size:21px}
+.mod-screen .hm-lead{margin:-5px 0 17px;font-size:14px;line-height:1.45}
+.mod-screen .hm-card{border-radius:14px;padding:14px;margin-bottom:14px}
+.mod-screen .hm-sub-card .hm-avatar{width:48px;height:48px}
+.mod-screen .hm-author{gap:14px}
+.mod-screen .hm-who .hm-name{font-size:14px;line-height:1.5;font-weight:600}
+.mod-screen .hm-sub{margin-top:4px;gap:5px 8px}
+.mod-screen .hm-time{font-size:12px}
+.mod-screen .hm-cat{padding:3px 8px;font-size:11px}
+.mod-screen .hm-pending{font-size:11px;padding:5px 9px}
+.mod-screen .hm-title{font-size:16px;line-height:1.4;margin:16px 0 9px}
+.mod-screen .hm-preview{font-size:14px;line-height:1.55}
+.mod-screen .hm-view{font-size:14px;line-height:1.5;margin:16px 0 0;padding:4px 0}
+.mod-screen .hm-actions{gap:10px;margin-top:15px}
+.mod-screen .hm-btn{min-height:43px;border-radius:6px;font-size:14px;line-height:1.4;padding:10px 12px}
+.mod-screen .hm-full{font-size:15px;line-height:1.85}
+.mod-screen .hm-full-card .hm-actions{margin-top:24px}
+.mod-screen .hm-full-card .hm-title{margin:17px 0 12px}
+.mod-screen .hm-identity{display:flex;gap:16px;padding:15px}
+.mod-screen .hm-avatar.lg{width:64px;height:64px}
+.mod-screen .hm-identity .hm-name{font-size:15px}
+.mod-screen .hm-identity .hm-role{font-size:11px;padding:3px 10px;margin-top:4px}
+.mod-screen .hm-identity p{font-size:11px;margin-top:8px}
+.mod-screen .hm-tool{padding:14px 16px;border-radius:13px;margin-bottom:9px}
+.mod-screen .hm-tool h3{font-size:15px;line-height:1.4}
+.mod-screen .hm-tool p{font-size:12px;line-height:1.45}
+.mod-screen .hm-count{font-size:11px;line-height:1.5;margin-top:6px;padding:4px 10px}
+.mod-screen .hm-note{font-size:12px;line-height:1.45}
+.mod-screen .hm-activity{padding:0}
+.mod-screen .hm-act{padding:14px 16px}
+.mod-screen .hm-act b{font-size:14px;line-height:1.45}
+.mod-screen .hm-act span{font-size:12px}
+.mod-screen .hm-search,.mod-screen .hm-input{border-radius:6px;min-height:44px}
+.mod-screen .hm-search{padding:0 14px;margin-bottom:12px}
+.mod-screen .hm-search input,.mod-screen .hm-input{font-size:13px;padding-top:10px;padding-bottom:10px}
+.mod-screen .hm-add{gap:8px}
+.mod-screen .hm-add .hm-btn{min-width:89px}
+.mod-screen .hm-cat-row{padding:10px 14px}
+.mod-screen .hm-cat-name{font-size:14px}
+.mod-screen .hm-cat-acts{gap:10px}
+.mod-screen .hm-cat-acts button{font-size:12px;padding:4px 0}
+.mod-screen .hm-cat-acts svg{width:17px;height:17px}
+.mod-screen .hm-plain-cat{font-size:12px;margin:0 0 9px}
+.mod-screen .hm-management-card .hm-avatar{width:44px;height:44px}
+.mod-screen .hm-management-card .hm-title{margin:13px 0 5px}
+.mod-screen .hm-management-card .hm-actions{margin-top:16px}
+.mod-screen .hm-management-card .hm-btn{min-height:39px}
+.hm-title-link{font:inherit;color:inherit;padding:0;border:0;background:transparent;text-align:start;cursor:pointer}
+.hm-title-link:focus-visible{outline:2px solid #e91e63;outline-offset:4px}
+.mod-screen .hm-tabs{margin:6px 0 0}
+.mod-screen .hm-tabs button{font-size:14px}
+.mod-screen .hm-user{border-radius:7px}
+.mod-screen .hm-user-top{gap:16px;margin-bottom:13px}
+.mod-screen .hm-user .hm-role,.mod-screen .hm-user .hm-active,.mod-screen .hm-user .hm-blocked{font-size:12px}
+.mod-screen .hm-psw{font-size:11px;min-height:34px;padding:5px 3px;gap:4px}
+.mod-screen .hm-perm{padding:13px 14px}
+.mod-screen .hm-perm h3{font-size:14px}
+.mod-screen .hm-perm p{font-size:12px}
+.hm-modal{width:min(83vw,420px);border-radius:12px;padding:22px 20px 16px}
+.hm-modal h2{font-size:22px;line-height:1.25}
+.hm-modal p{font-size:13px;line-height:1.45;margin-bottom:14px}
+.hm-modal .hm-radio{font-size:13px;line-height:1.4;min-height:32px;gap:14px;padding:2px 2px}
+.hm-modal .hm-reasons{gap:4px;margin-bottom:15px}
+.hm-modal .hm-btn{min-height:43px;border-radius:6px;font-size:14px}
+/* The Moderator Profile reference uses the existing serif family and a full-width edit row. */
+body.moderation-mode #beautyApp.user-profile-screen{width:92.4vw;max-width:520px;padding-bottom:90px;overflow:visible}
+body.moderation-mode #beautyApp.user-profile-screen .user-profile-title{padding-top:0;margin:10px 0 18px;font-size:24px}
+.hm-profile-bell{display:flex;justify-content:flex-end;height:48px;align-items:center;padding-top:8px}
+.hm-profile-bell img{width:24px;height:24px;object-fit:contain}
+body.moderation-mode #beautyApp .hm-profile-identity{grid-template-columns:58px minmax(0,1fr) 16px;gap:12px;padding:15px 12px 0;margin:0 0 13px;background:#fff;border-radius:15px;box-shadow:0 3px 10px #7d244416}
+.hm-profile-identity .account-avatar{width:48px;height:48px;font-size:28px;margin-left:6px}
+#beautyApp .hm-profile-identity h2{font-size:20px}
+.hm-profile-identity p{font-size:12px;margin:4px 0 3px}
+.hm-profile-identity .mod-role-badge{font-size:10px;padding:3px 10px;margin-top:0}
+.hm-profile-edit{grid-column:1/-1;min-height:42px;border:0;border-top:1px solid #f0dde6;background:transparent;color:#c91656;font:12px Poppins,sans-serif;cursor:pointer}
+.hm-tools-entry{gap:12px;padding:12px;border-radius:15px;margin:0 0 24px;box-shadow:0 3px 10px #7d244416}
+.hm-tools-icon{width:44px;height:44px;font-size:18px}
+.hm-tools-entry h3{font-size:19px;line-height:1.3;margin:0 0 4px}
+.hm-tools-entry p{font-size:12px;line-height:1.4}
+body.moderation-mode #beautyApp .account-section-title{font-size:22px!important;margin:20px 0 14px}
+body.moderation-mode #beautyApp.user-profile-screen .account-row{min-height:60px;border-radius:14px;background:#fff;box-shadow:0 3px 10px #7d244414;grid-template-columns:46px minmax(0,1fr) 16px}
+body.moderation-mode #beautyApp.user-profile-screen .account-row>span{width:36px;height:36px;border-radius:50%}
+body.moderation-mode #beautyApp.user-profile-screen .account-row b{font-size:19px;color:#4d1038}
+body.moderation-mode #beautyApp.user-profile-screen .account-signout{display:block;min-height:37px;text-align:center;padding:8px;margin-top:10px;background:#fff;border-color:#bfaeb8;border-radius:20px;font-size:12px}
+body.moderation-mode #beautyApp.user-profile-screen .account-signout>span,body.moderation-mode #beautyApp.user-profile-screen .account-signout>i{display:none}
+body.moderation-mode:has(.mod-screen) .nav{border-radius:0;bottom:0;width:100%;max-width:520px;height:78px;padding-bottom:env(safe-area-inset-bottom);box-sizing:content-box;box-shadow:0 -2px 10px #7d24440a}
+body.moderation-mode:has(.mod-screen) .nav img{width:22px;height:22px;object-fit:contain}
+body.moderation-mode:has(.mod-screen) .nav span{font-size:10px;line-height:1.3}
+@media(max-width:360px){
+ #beautyApp.mod-screen .beauty-head h1{font-size:20px}
+ .mod-screen .hm-author{grid-template-columns:auto minmax(0,1fr);gap:10px}
+ .mod-screen .hm-pending{grid-column:2;justify-self:start;padding:3px 7px}
+ .mod-screen .hm-actions,.hm-modal-actions{flex-direction:row}
+ .hm-modal{width:94vw;padding:18px 14px}
+}
+.mod-screen .hm-perm-main{display:flex;align-items:flex-start;gap:16px}
+.mod-screen .hm-perm-details{flex:1;min-width:0}
+.mod-screen .hm-perm-details summary{list-style:none;cursor:pointer}
+.mod-screen .hm-perm-details summary::-webkit-details-marker{display:none}
+.mod-screen .hm-perm-details summary:focus-visible{outline:2px solid #e91e63;outline-offset:3px}
+.mod-screen .hm-perm-details .hm-psws{grid-template-columns:repeat(3,minmax(0,1fr));margin-top:12px}
+.mod-screen .hm-switch{width:42px;height:24px;margin-top:4px}
+.mod-screen .hm-switch span{width:18px;height:18px}
+.mod-screen .hm-switch.on span{transform:translateX(18px)}
+/* Existing permission semantics remain independent. Switch controls Review;
+   expanding the section reveals Approve, Reject and Edit, each unchanged. */
+/* Final spacing pass after rendered reference comparison. */
+.mod-screen .hm-h2{margin-top:12px}
+.mod-screen .hm-lead{margin-bottom:14px}
+.mod-screen .hm-title{margin-top:14px}
+.mod-screen .hm-view{margin-top:14px}
+.mod-screen .hm-actions{margin-top:9px}
+.mod-screen .hm-preview{line-height:1.45}
+.mod-screen .hm-identity+.hm-h2{margin-top:26px}
+.mod-screen .hm-note+.hm-h2{margin-top:28px}
+.mod-screen .hm-group+.hm-group>.hm-h2{margin-top:26px}
+.mod-screen .hm-add+.hm-h2{margin-top:26px}
+body.moderation-mode:has(.user-profile-screen) .nav{height:58px}
+body.moderation-mode:has(.mod-screen) .nav>div{display:flex;flex-direction:column;align-items:center;gap:5px;color:#23121f;opacity:1!important}
+body.moderation-mode:has(.mod-screen) .nav>div:last-child{color:#e91e63}
+body.moderation-mode:has(.mod-screen) .nav img{display:none}
+body.moderation-mode:has(.mod-screen) .nav>div::before{content:"";display:block;width:24px;height:24px;background:currentColor;mask:var(--hm-nav-icon) center/contain no-repeat}
+body.moderation-mode:has(.mod-screen) .nav>div:nth-child(1){--hm-nav-icon:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M3%2010%2012%203l9%207v11h-6v-7H9v7H3z%22/%3E%3C/svg%3E")}
+body.moderation-mode:has(.mod-screen) .nav>div:nth-child(2){--hm-nav-icon:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Ccircle%20cx%3D%2210.5%22%20cy%3D%2210.5%22%20r%3D%227.5%22/%3E%3Cpath%20d%3D%22m16%2016%206%206%22/%3E%3C/svg%3E")}
+body.moderation-mode:has(.mod-screen) .nav>div:nth-child(3){--hm-nav-icon:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M3%2010h18l-2-6H5zM5%2010v11h14V10M9%2021v-6h6v6M3%2010c0%204%205%204%205%200%200%204%208%204%208%200%200%204%205%204%205%200%22/%3E%3C/svg%3E")}
+body.moderation-mode:has(.mod-screen) .nav>div:nth-child(4){--hm-nav-icon:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M5%208h14l2%2013H3zM8%208V6a4%204%200%200%201%208%200v2%22/%3E%3C/svg%3E")}
+body.moderation-mode:has(.mod-screen) .nav>div:nth-child(5){--hm-nav-icon:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%227%22%20r%3D%224%22/%3E%3Cpath%20d%3D%22M4%2022v-3c0-5%2016-5%2016%200v3z%22/%3E%3C/svg%3E")}
+/* Reference sans proportions, scoped to these seven moderation states. */
+#beautyApp.mod-screen,#beautyApp.mod-screen :is(h1,h2,h3,h4,p,b,span,button,input,summary,textarea),.hm-modal,.hm-modal :is(h2,p,label,button,textarea){font-family:Arial,system-ui,sans-serif}
+body.beauty-mode .beauty-shell.mod-screen .beauty-head{padding-top:12px}
+body.beauty-mode .beauty-shell.mod-screen .beauty-head>.back{height:32px;align-self:start}
+#beautyApp.mod-screen .beauty-head h1{font-size:22px;line-height:1.2}
+#beautyApp.mod-screen .beauty-head p{font-size:14px}
+.mod-screen .hm-who .hm-name{font-weight:500}
+.mod-screen .hm-tool,.mod-screen .hm-identity,.mod-screen .hm-activity,.mod-screen .hm-user,.mod-screen .hm-perm,.mod-screen .hm-cat-row{border-radius:6px}
+.mod-screen .hm-pending{border-radius:9px}
+.mod-screen .hm-role,.mod-screen .hm-count{border-radius:6px}
+.mod-screen .hm-identity p{font-size:12px;white-space:normal}
+.mod-screen .hm-h2.lg{font-size:20px}
+#beautyApp.mod-screen[data-mod-route="poetry-management"] .beauty-head{padding-bottom:8px}
+#beautyApp.mod-screen[data-mod-route="poetry-management"] .hm-h2{font-size:18px}
+#beautyApp.mod-screen[data-mod-route="mod-users"] .hm-h2{font-size:19px}
+.mod-screen .hm-user.selected{border-color:var(--hm-line)}
+.mod-screen .hm-users-count{font-size:11px}
+.hm-avatar.lg svg{width:80%;height:80%}
+body.moderation-mode:has(.mod-screen) .nav>div:last-child{--hm-nav-icon:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='7' r='4.5'/%3E%3Cpath d='M3 22v-3c0-8 18-8 18 0v3z'/%3E%3C/svg%3E")}
+@font-face{font-family:HerDayModerationSans;src:url('assets/moderation-fonts/roboto-400.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:HerDayModerationSans;src:url('assets/moderation-fonts/roboto-500.woff2') format('woff2');font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:HerDayModerationSans;src:url('assets/moderation-fonts/roboto-700.woff2') format('woff2');font-weight:700;font-style:normal;font-display:swap}
+#beautyApp.mod-screen,#beautyApp.mod-screen :is(h1,h2,h3,h4,p,b,span,button,input,summary,textarea),#beautyApp.mod-screen .beauty-head h1,#beautyApp.mod-screen h2,#beautyApp.mod-screen h3,.hm-modal,.hm-modal :is(h2,p,label,button,textarea){font-family:HerDayModerationSans,Arial,system-ui,sans-serif}
+.mod-screen .hm-identity{gap:16px}
+.mod-screen .hm-identity p{font-size:12px}
+.mod-screen .hm-tool{padding-top:12px;padding-bottom:12px}
+.mod-screen .hm-btn{font-weight:400}
+.hm-modal .hm-btn{font-weight:400}
+.hm-tools-icon svg{width:24px;height:24px}
+.hm-profile-provider{width:100%;display:flex;align-items:center;gap:12px;padding:16px 12px;text-align:left;background:#fff;border:1px solid #f0dde6;border-radius:15px;box-shadow:0 3px 10px #7d244416;color:#4d1038;cursor:pointer}
+#beautyApp .hm-profile-provider h3{font:20px/1.2 DMSerif,Georgia,serif;margin:0 0 5px}
+.hm-profile-provider p{margin:0 0 5px;font:12px Poppins,sans-serif;color:#857784}
+.hm-profile-provider>div>span{font:12px Poppins,sans-serif;color:#c91656}
+#beautyApp.mod-screen .beauty-head h1{font-size:23px}
+.mod-screen .hm-who .hm-name{font-size:15px;font-weight:400}
+.mod-screen .hm-title{font-size:17px}
+.mod-screen .hm-pending{font-size:12px}
+.mod-screen .hm-preview{font-size:14.5px}
+.mod-screen .hm-full{font-size:16px;line-height:1.45;color:var(--hm-muted)}
+.mod-screen .hm-full-card .hm-title{font-size:18px}
+.hm-modal-backdrop{background:rgba(0,0,0,.58)}
+.hm-modal p{font-size:14px}
+.hm-modal .hm-radio{font-size:15px;gap:14px}
+.hm-profile-provider{padding:8px 12px;min-height:92px;box-sizing:border-box}
+body.moderation-mode #beautyApp .hm-profile-identity,body.moderation-mode .hm-tools-entry,body.moderation-mode .hm-profile-provider,body.moderation-mode #beautyApp.user-profile-screen .account-row{box-shadow:0 1px 5px #45273840}
+body.moderation-mode:has(.mod-screen) .nav{height:74px}
