@@ -1,0 +1,65 @@
+/* Approved canvas #FFF8FA; cards #FFFDFD; fields #FFFFFF; CTA #E91E63→#EC1971; secondary #FFFFFF/#E8B9CC/#C91656. */
+#beautyApp.herday-section .ds-page{padding:18px 2.6%;background:#FFF8FA;color:#360018;display:grid;gap:12px}
+#beautyApp.herday-section .ds-header{display:flex;align-items:flex-start;gap:16px;margin:0 8px 14px}
+#beautyApp.herday-section .ds-header h1{font-weight:700;margin:0;font-size:25px;line-height:1.25}
+#beautyApp.herday-section .ds-header p{margin:7px 0 0;font-size:13px;color:#805368}
+#beautyApp.herday-section .ds-header button{border:0;background:transparent;color:#360018;font-size:28px;min-width:44px;min-height:44px;padding:0}
+#beautyApp.herday-section .ds-card{background:#FFFDFD;border:1px solid #F0E3E9;border-radius:14px;padding:17px;min-width:0}
+#beautyApp.herday-section .ds-card h2{font-family:inherit;font-size:17px;line-height:1.35;margin:0 0 14px}
+#beautyApp.herday-section .ds-card p{font-size:13px;line-height:1.5;white-space:normal;margin:10px 0 0;color:#805368;overflow-wrap:anywhere}
+#beautyApp.herday-section .ds-page small{font-size:12px;line-height:1.5;color:#805368;display:block}
+#beautyApp.herday-section .ds-page button{font:inherit;cursor:pointer}
+#beautyApp.herday-section .ds-page button:not(.ds-header button){min-height:44px;padding:10px 12px;border:1px solid #E8B9CC;border-radius:9px;background:#FFFFFF;color:#C91656}
+#beautyApp.herday-section .ds-page button.ds-primary{background:linear-gradient(90deg,#E91E63,#EC1971);border:0;color:#FFFFFF;font-weight:600}
+#beautyApp.herday-section .ds-page button:disabled{opacity:.6;cursor:default}
+#beautyApp.herday-section .ds-page :focus-visible{outline:2px solid #C91656;outline-offset:3px}
+#beautyApp.herday-section .ds-page input,#beautyApp.herday-section .ds-page textarea{box-sizing:border-box;width:100%;min-width:0;background:#FFFFFF;color:#360018;border:1px solid #E8B9CC;border-radius:9px;min-height:44px;padding:10px;font:inherit}
+#beautyApp.herday-section .ds-page input:disabled{background:#F5F3F4}
+#beautyApp.herday-section .ds-page textarea{min-height:70px;resize:vertical}
+#beautyApp.herday-section .ds-page label{display:grid;gap:8px;font-size:14px;margin-top:14px}
+#beautyApp.herday-section .ds-page label:first-child{margin-top:0}
+#beautyApp.herday-section .ds-page fieldset{display:grid;gap:12px;min-width:0;border:0;padding:0;margin:0}
+#beautyApp.herday-section .ds-page [data-ds-search]{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px}
+#beautyApp.herday-section .ds-results{display:grid;gap:8px;margin-top:12px;max-height:340px;overflow:auto}
+#beautyApp.herday-section .ds-results button{text-align:left;overflow-wrap:anywhere}
+#beautyApp.herday-section .ds-selected{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+#beautyApp.herday-section .ds-selected>div{flex:1;min-width:100px;overflow-wrap:anywhere}
+#beautyApp.herday-section .ds-selected h2{margin:0}
+#beautyApp.herday-section .ds-selected p{margin:4px 0 0}
+#beautyApp.herday-section .ds-avatar{width:54px;height:54px;border-radius:50%;background:#FCE5EE;display:grid;place-items:center;font-size:20px}
+#beautyApp.herday-section .ds-badge,#beautyApp.herday-section .diary-storage-status{display:inline-flex;background:#FCE5EE;color:#C91656;border-radius:30px;padding:6px 12px;font-size:12px;font-weight:600}
+#beautyApp.herday-section .ds-row{display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:9px 0;border-bottom:1px solid #F3E9EE;font-size:14px;flex-wrap:wrap}
+#beautyApp.herday-section .ds-row>span{color:#805368}
+#beautyApp.herday-section .ds-page progress,#beautyApp.herday-section .diary-storage-card progress{appearance:none;border:0;display:block;width:100%;height:14px;margin:14px 0 8px;background:#F6E7EE;border-radius:20px;overflow:hidden}
+#beautyApp.herday-section progress::-webkit-progress-bar{background:#F6E7EE;border-radius:20px}
+#beautyApp.herday-section progress::-webkit-progress-value{background:linear-gradient(90deg,#E91E63,#EC1971);border-radius:20px}
+#beautyApp.herday-section progress::-moz-progress-bar{background:linear-gradient(90deg,#E91E63,#EC1971);border-radius:20px}
+#beautyApp.herday-section .ds-presets{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+#beautyApp.herday-section .ds-actions{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:15px}
+#beautyApp.herday-section .ds-card .ds-warning{background:#FFF3DD;color:#89501C;padding:10px;border-radius:8px}
+#beautyApp.herday-section .ds-history{padding:12px 0;border-bottom:1px solid #F3E9EE}
+#beautyApp.herday-section .ds-privacy{font-size:12px;color:#805368;line-height:1.5}
+#beautyApp.herday-section .ds-message{color:#9C1649;border:1px solid #E8B9CC;padding:12px;border-radius:10px;overflow-wrap:anywhere}
+/* V5 Settings reference: only Settings-specific surfaces. Existing flows retained. */
+#beautyApp.herday-section .diary-settings-header h1{color:#000000;font-family:inherit}
+#beautyApp.herday-section .diary-settings-header>button:first-child{border:1px solid #E8B9CC;border-radius:10px;background:#FFFFFF;color:#000000}
+#beautyApp.herday-section .diary-content:has(.diary-settings-intro){gap:18px;padding-inline:4.26%}
+#beautyApp.herday-section .diary-settings-intro{gap:18px;min-height:86px}
+#beautyApp.herday-section .diary-settings-intro .diary-setting-icon{border-right:1px solid #F3CEE0;padding-right:16px;border-radius:0;background:transparent}
+#beautyApp.herday-section .diary-settings-intro h2,#beautyApp.herday-section .diary-settings-group h2,#beautyApp.herday-section .diary-settings-group h3,#beautyApp.herday-section .diary-settings-group strong{color:#000000}
+#beautyApp.herday-section .diary-settings-group>h2{font-size:23px;margin-bottom:12px}
+#beautyApp.herday-section .diary-settings-group .section-card{border-color:#E8B9CC;padding:16px}
+#beautyApp.herday-section .diary-setting-icon{background:#FCEAF1;border-radius:14px;width:48px;min-width:48px;height:48px}
+#beautyApp.herday-section .diary-setting-row{grid-template-columns:48px minmax(0,1fr) auto;gap:14px;padding:14px 0}
+#beautyApp.herday-section .diary-setting-row>div{min-width:0}
+#beautyApp.herday-section .diary-setting-row p,#beautyApp.herday-section .diary-setting-row small,#beautyApp.herday-section .diary-settings-intro p{color:#353035}
+#beautyApp.herday-section .diary-settings-group .diary-setting-row+.diary-setting-row{border-top:1px solid #F3CEE0}
+#beautyApp.herday-section .diary-auto input{appearance:none;width:54px;height:32px;background:#D8C8D0;border-radius:24px;position:relative;border:0;cursor:pointer}
+#beautyApp.herday-section .diary-auto input:checked{background:linear-gradient(90deg,#E91E63,#EC1971)}
+#beautyApp.herday-section .diary-auto input:before{content:'';position:absolute;width:26px;height:26px;left:3px;top:3px;border-radius:50%;background:#FFFFFF}
+#beautyApp.herday-section .diary-auto input:checked:before{left:25px}
+#beautyApp.herday-section .diary-storage-card .diary-storage-summary{font-size:15px}
+#beautyApp.herday-section .diary-storage-card .diary-storage-summary strong{font-size:15px;font-weight:400}
+#beautyApp.herday-section .diary-storage-status{margin:12px 0;font-size:13px}
+#beautyApp.herday-section .diary-storage-expiry{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:0 0 14px;font-size:14px}
+#beautyApp.herday-section .diary-content:has(.diary-settings-intro)>.diary-private{padding-top:4px;margin-bottom:23px;text-align:center;color:#353035}

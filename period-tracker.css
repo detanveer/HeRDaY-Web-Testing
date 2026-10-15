@@ -1,0 +1,82 @@
+/* Source: approved 1080x3770 Period reference. Intrinsic height, scoped tokens. */
+.beauty-shell.period-shell{width:100%;max-width:520px;margin:0 auto;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif;color:#482B40;background:#FFF8FA}
+.period-content{padding-top:12px}
+.period-content h2{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:20px;line-height:1.3;margin:22px 0 12px}
+.period-content h2 small{font-size:13px;color:#927D87;font-weight:400}
+.period-content h2 button{font-size:12px;border:0;background:transparent;min-height:44px;padding:0 8px}
+.period-content .section-card{border:1px solid #F0E3E9;border-radius:12px;background:#FFFDFD}
+.period-content small{color:#927D87;font-size:12px;line-height:1.5}
+.period-summary{display:grid;grid-template-columns:1.3fr 1fr;gap:24px 14px;padding:14px 12px}
+.period-summary>div{display:flex;flex-direction:column;gap:6px;min-width:0}
+.period-summary strong{font-size:20px;line-height:1.35;overflow-wrap:anywhere}
+.period-summary>div:nth-child(2) strong{font-size:16px;color:#C91656}
+.period-summary span{font-size:13px;line-height:1.5}
+.period-model-label{font-size:12px;color:#927D87;line-height:1.6;margin:12px 0}
+.period-preference-link{text-align:right}
+.period-preference-link button{font-size:12px;min-height:44px;padding:6px 12px}
+.period-calendar{padding:12px 8px}
+.period-calendar header{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:12px}
+.period-calendar header strong{font-size:15px}
+.period-calendar header button{border:0;font-size:24px;min-width:44px;background:transparent}
+.period-week,.period-days{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));text-align:center;gap:2px}
+.period-week{font-size:11px;color:#927D87;margin-bottom:8px}
+.period-days button{justify-self:center;width:100%;max-width:44px;min-height:44px;background:transparent;color:#482B40;border:0;border-radius:50%;font:inherit;font-size:13px;margin-bottom:4px}
+.period-days button.actual,.period-legend i.actual{background:#F8D5E2;color:#AB295D}
+.period-days button.predicted,.period-legend i.predicted{background:#E8B9CC;color:#7F6574}
+.period-days button.outside{opacity:.6}
+.period-days button.selected,.period-legend i.selected{background:#C91656;color:#FFFFFF;outline:2px solid #FFFDFD;box-shadow:0 0 0 1px #C91656}
+.period-legend{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;font-size:10px;color:#927D87;margin:12px 0 2px}
+.period-legend span{display:flex;align-items:center;gap:5px}
+.period-legend i{display:inline-block;width:10px;height:10px;border-radius:50%}
+.period-panel{padding:14px 12px;margin:16px 0}
+.period-panel fieldset{border:0;margin:0;padding:0;min-width:0}
+.period-panel h3{font-size:14px;margin:0 0 12px}
+.period-panel .period-chips+h3{margin-top:20px}
+.period-chips{display:grid;gap:6px}
+.period-flow{grid-template-columns:repeat(4,minmax(0,1fr))}
+.period-symptoms{grid-template-columns:repeat(3,minmax(0,1fr))}
+.period-mood{grid-template-columns:repeat(5,minmax(0,1fr))}
+.period-mucus{grid-template-columns:repeat(5,minmax(0,1fr))}
+.period-chips button{background:#FFFFFF;border:1px solid #E8B9CC;border-radius:7px;color:#7F6574;min-height:44px;font:inherit;font-size:11px;padding:4px 1px;overflow-wrap:anywhere}
+.period-chips button[aria-pressed=true]{background:#FBE1EC;color:#C91656}
+.period-panel label{display:block;font-size:14px;line-height:1.5;margin:18px 0 10px}
+.period-panel input:not([type=checkbox]),.period-panel textarea,.period-panel select{box-sizing:border-box;width:100%;display:block;font:inherit;font-size:16px;color:#482B40;background:#FFFFFF;border:1px solid #E8B9CC;border-radius:8px;padding:12px;margin:8px 0;min-height:44px}
+.period-panel textarea{min-height:80px;resize:vertical;line-height:1.5}
+.period-panel .period-consent{display:flex;align-items:flex-start;gap:8px;font-size:12px}
+.period-consent input{width:20px;height:20px;flex-shrink:0;accent-color:#C91656}
+.period-panel .section-primary,.period-panel .section-secondary{display:block;width:100%;margin-top:12px;min-height:44px;font-size:14px}
+.period-insights{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.period-insights section{padding:12px 8px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.period-insights small{font-size:10px}
+.period-insights strong{font-size:15px;overflow-wrap:anywhere}
+.period-history{padding:8px 12px}
+.period-history>div{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.period-history>div button{font:inherit;font-size:12px;color:#482B40;border:0;background:transparent;min-height:44px;text-align:left;padding:4px 0}
+.period-history>.section-secondary{width:100%;font-size:13px;margin:8px 0}
+.period-health{padding:14px 12px;margin-top:20px;background:#FCF8FB!important}
+.period-health h3{font-size:14px;margin:0 0 10px}
+.period-health p{font-size:12px;line-height:1.7;color:#897480;margin:8px 0}
+.period-private{text-align:center;color:#816677;margin:18px 0 10px}
+.period-private strong{font-size:17px}
+.period-private p{font-size:12px;line-height:1.5}
+.period-private button{padding:8px 12px;font-size:12px}
+.period-status{font-size:13px;line-height:1.6;color:#C91656;overflow-wrap:anywhere}
+.period-shell button:disabled{opacity:.6;cursor:wait}
+.ovulation-period-link{padding:12px;margin-top:20px}
+.ovulation-period-link button{border:0;background:transparent!important;width:100%;text-align:left;color:#482B40!important;font-size:14px;font-weight:700}
+.ovulation-period-link p{margin:0;font-size:12px;color:#927D87;line-height:1.5}
+.ovulation-shell .gs-header h1{font-size:20px}
+.ovulation-shell .period-summary strong{font-size:17px}
+.ovulation-shell .period-days button.illustrative,.ovulation-shell .period-legend i.illustrative{background:#EDE4F4;color:#78528B}
+.ovulation-shell .period-days button.approximate,.ovulation-shell .period-legend i.approximate{outline:2px solid #78528B;outline-offset:-4px}
+.ovulation-shell .period-days button.selected{outline:2px solid #C91656;outline-offset:-2px;box-shadow:none;background:transparent;color:#482B40}
+.ovulation-shell .period-days button.selected.illustrative{background:#EDE4F4;color:#78528B}
+.ovulation-shell .period-days button.selected.actual{background:#F8D5E2;color:#AB295D}
+.ovulation-timeline{padding:12px}
+.ovulation-timeline>div{position:relative;display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:44px;font-size:12px;line-height:1.5;margin-left:8px;padding-left:16px;border-left:1px solid #E8B9CC}
+.ovulation-timeline>div:before{content:'';position:absolute;left:-5px;top:18px;width:8px;height:8px;border:1px solid #E8B9CC;background:#EDE4F4;border-radius:50%}
+.ovulation-timeline>div:first-child:before{background:#F8D5E2}
+.ovulation-timeline strong{font-weight:500}
+.ovulation-timeline span{color:#927D87;text-align:right}
+@media(max-width:350px){.period-mood{grid-template-columns:repeat(3,minmax(0,1fr))}.period-insights{grid-template-columns:1fr}.period-summary{grid-template-columns:1fr 1fr}.period-summary strong{font-size:18px}}
+@media(max-width:350px){.period-mucus{grid-template-columns:repeat(3,minmax(0,1fr))}}
