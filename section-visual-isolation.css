@@ -1,0 +1,18 @@
+/* New sections only: prevent legacy Home type and nowrap rules from leaking in.
+   Canvas #FFF8FA; cards #FFFDFD; existing CTA colors remain unchanged. */
+#beautyApp.herday-section :is(h1,h2,h3,h4,p,label,li,button,input,textarea,select){font-family:Poppins,sans-serif}
+#beautyApp.herday-section :is(h1,h2,h3,h4,p,label){white-space:normal;overflow-wrap:anywhere}
+#beautyApp.herday-section :is(.ex-body,.rr-body,.section-post-reading),
+#beautyApp.herday-section .gs-comment p,
+#beautyApp.herday-section .diary-thoughts p{white-space:pre-wrap}
+#beautyApp.herday-section .gs-feature-copy,
+#beautyApp.herday-section .gs-wide-feature>div,
+#beautyApp.herday-section .gs-tool-copy{min-width:0}
+/* Reserve the approved artwork ratios before the network finishes loading. */
+#beautyApp.gs-landing-shell .gs-feature>img{aspect-ratio:475/236;object-fit:contain}
+#beautyApp.gs-landing-shell .gs-wide-feature>img{object-fit:contain}
+#beautyApp.gs-landing-shell [data-gs-landing-route=gs-tools]>img{aspect-ratio:547/308}
+#beautyApp.gs-landing-shell [data-gs-landing-route=gs-diary]>img{aspect-ratio:547/334}
+
+/* The approved Explore Admin queue deliberately uses a serif title. */
+#beautyApp.herday-section .ex-admin-queue .ex-header h1{font-family:DMSerif,serif}
