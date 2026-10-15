@@ -1,0 +1,84 @@
+/* New sections only: prevent legacy Home type and nowrap rules from leaking in.
+   Canvas #FFF8FA; cards #FFFDFD; existing CTA colors remain unchanged. */
+#beautyApp.herday-section :is(h1,h2,h3,h4,p,label,li,button,input,textarea,select){font-family:Poppins,sans-serif}
+#beautyApp.herday-section :is(h1,h2,h3,h4,p,label){white-space:normal;overflow-wrap:anywhere}
+#beautyApp.herday-section :is(.ex-body,.rr-body,.section-post-reading),
+#beautyApp.herday-section .gs-comment p,
+#beautyApp.herday-section .diary-thoughts p{white-space:pre-wrap}
+#beautyApp.herday-section .gs-feature-copy,
+#beautyApp.herday-section .gs-wide-feature>div,
+#beautyApp.herday-section .gs-tool-copy{min-width:0}
+/* Reserve the approved artwork ratios before the network finishes loading. */
+#beautyApp.gs-landing-shell .gs-feature>img{aspect-ratio:475/236;object-fit:contain}
+#beautyApp.gs-landing-shell .gs-wide-feature>img{object-fit:contain}
+#beautyApp.gs-landing-shell [data-gs-landing-route=gs-tools]>img{aspect-ratio:547/308}
+#beautyApp.gs-landing-shell [data-gs-landing-route=gs-diary]>img{aspect-ratio:547/334}
+
+/* The approved Explore Admin queue deliberately uses a serif title. */
+#beautyApp.herday-section .ex-admin-queue .ex-header h1{font-family:DMSerif,serif}
+
+/* Low-specificity fallbacks replace legacy Home's 8.5px paragraph shorthand.
+   Page-specific type sizes/weights continue to take precedence. */
+:where(#beautyApp.herday-section) p{font-size:14px;line-height:1.5}
+:where(#beautyApp.herday-section) :is(h2,h3,h4){font-weight:700}
+#beautyApp.herday-section textarea{white-space:pre-wrap}
+#beautyApp.herday-section .ex-page{min-width:0}
+#beautyApp.herday-section .ex-card :is(h2,p){min-width:0}
+/* All added pages use the same full-width mobile canvas. Inner components own
+   their measured gutters and nav clearance; legacy Beauty padding must not add
+   a second outer inset or a second bottom spacer. */
+#beautyApp.beauty-shell.herday-section{width:100%;max-width:520px!important;margin:0 auto!important;padding:0;box-sizing:border-box}
+body:has(#beautyApp.herday-section){padding-bottom:0}
+#beautyApp.herday-section :is(.ex-page,.rr-page){padding-inline:4.63%}
+#beautyApp.herday-section .section-body{padding-inline:4.444%}
+#beautyApp.herday-section .diary-content:has([data-pin-mode="unlock"]){padding-inline:4.3%;padding-bottom:var(--herday-section-nav-clearance,90px)}
+
+/* Source composer uses an Add tile, with real selected-photo previews. */
+#beautyApp.herday-section .gs-composer{padding:3%;}
+#beautyApp.herday-section .gs-upload-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:12px}
+#beautyApp.herday-section .gs-upload-grid .gs-attachments{display:contents}
+#beautyApp.herday-section .gs-upload-tile{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;aspect-ratio:1;border:1px dashed #E8B9CC;border-radius:12px;color:#C91656;cursor:pointer;overflow:hidden}
+#beautyApp.herday-section .gs-upload-tile>span{font-size:38px;line-height:1}
+#beautyApp.herday-section .gs-upload-tile input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer}
+#beautyApp.herday-section .gs-upload-tile:focus-within{outline:2px solid #C91656;outline-offset:2px}
+#beautyApp.herday-section .gs-upload-grid:has(.gs-photo:nth-child(5)) .gs-upload-tile{display:none}
+#beautyApp.herday-section .gs-composer [role=status]:empty{display:none}
+
+#beautyApp.herday-section :is(.gs-header,.ex-header)>button[aria-label="Back"]{display:grid;place-items:center;flex-shrink:0;padding:0}
+#beautyApp.herday-section :is(.gs-header,.ex-header)>button[aria-label="Back"] svg{width:24px;height:24px}
+#beautyApp.explore-shell{container-type:inline-size}
+#beautyApp.explore-shell .ex-category-grid-page .ex-categories button{min-height:112px;padding:8px;gap:3px}
+#beautyApp.explore-shell .ex-category-grid-page .ex-categories img{width:clamp(48px,14cqw,72px);height:clamp(48px,14cqw,72px)}
+#beautyApp.explore-shell .ex-category-grid-page .ex-categories strong{font-size:clamp(13px,3.55cqw,16px);line-height:1.35}
+#beautyApp.explore-shell .ex-all-category-page .ex-categories button{min-height:130px}
+#beautyApp.explore-shell .ex-all-category-page .ex-categories img{width:clamp(60px,17cqw,88px);height:clamp(60px,17cqw,88px)}
+#beautyApp.explore-shell [data-ex-search]>button{order:-1;display:grid;place-items:center;flex-shrink:0}
+#beautyApp.explore-shell [data-ex-search]>button svg{width:22px;height:22px}
+
+#beautyApp.explore-shell .ex-form :is(input:not([type=checkbox]),select,textarea){background:#FFFFFF}
+#beautyApp.explore-shell .ex-form [name=body]{min-height:clamp(180px,41.57cqw,216px)}
+#beautyApp.explore-shell .ex-form .ex-upload-zone{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;min-height:100px;padding:16px;border:1px solid #E8B9CC;border-radius:12px;color:#C91656;text-align:center;cursor:pointer;margin:0;font-weight:400;overflow:hidden}
+#beautyApp.explore-shell .ex-upload-zone svg{width:36px;height:30px}
+#beautyApp.explore-shell .ex-upload-zone span{font-size:13px;color:#806B77}
+#beautyApp.explore-shell .ex-upload-zone input[type=file]{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer;padding:0;margin:0}
+#beautyApp.explore-shell .ex-upload-zone:focus-within{outline:2px solid #C91656;outline-offset:2px}
+
+/* PIN setup/change and recovery retain readable multi-row panels. */
+#beautyApp.herday-section .diary-pin{padding:0;max-width:none}
+#beautyApp.herday-section .diary-pin .diary-pin-panel>p{font-size:14px;line-height:1.5;margin:10px 0 20px;color:#9E7095}
+#beautyApp.herday-section .diary-pin-row.active{outline:none}
+#beautyApp.herday-section .diary-pin-row:focus-visible{outline:2px solid #C91656;outline-offset:2px}
+#beautyApp.herday-section .diary-pin .diary-status:empty{display:none}
+#beautyApp.herday-section .diary-content:has(.diary-pin)>footer.diary-private{display:none}
+#beautyApp.herday-section .diary-private{font-size:12px;line-height:1.5}
+#beautyApp.herday-section .diary-buttons{gap:12px}
+#beautyApp.herday-section .diary-attachments{grid-template-columns:1fr 1fr}
+#beautyApp.herday-section .diary-attachments>:is(.diary-attachment,small){grid-column:1/-1}
+#beautyApp.herday-section .diary-attachments>label{position:relative;text-align:center;padding:12px;margin:0;overflow:hidden;cursor:pointer}
+#beautyApp.herday-section .diary-attachments>label input[type=file]{position:absolute;inset:0;width:100%;height:100%;opacity:0;margin:0;cursor:pointer}
+#beautyApp.herday-section .diary-attachments>label:focus-within{outline:2px solid #C91656;outline-offset:2px}
+
+#beautyApp.explore-shell .ex-form[data-ex-review] legend{font-size:20px;font-weight:700;margin:22px 0 12px}
+#beautyApp.explore-shell .ex-card h3{font-size:16px;line-height:1.4;margin:16px 0 8px}
+#beautyApp.explore-shell .ex-form[data-ex-review] textarea{min-height:100px}
+#beautyApp.explore-shell .ex-card button:disabled{opacity:.6;cursor:default}

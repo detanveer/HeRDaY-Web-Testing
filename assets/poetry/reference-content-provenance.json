@@ -1,0 +1,291 @@
+[
+  {
+    "file": "reference-content/main-ayesha.webp",
+    "reference": "01-Poetry-Main-Feed.png",
+    "decoded_reference": [
+      1080,
+      2400
+    ],
+    "crop_xyxy": [
+      52,
+      953,
+      145,
+      1046
+    ],
+    "purpose": "Approved visual reference/demo post content; not production user data",
+    "original_crop_file": "reference-content/main-ayesha.png",
+    "web_encoding": "Lossless WebP; original dimensions and decoded RGBA preserved exactly"
+  },
+  {
+    "file": "reference-content/main-zara.webp",
+    "reference": "01-Poetry-Main-Feed.png",
+    "decoded_reference": [
+      1080,
+      2400
+    ],
+    "crop_xyxy": [
+      52,
+      1358,
+      145,
+      1452
+    ],
+    "purpose": "Approved visual reference/demo post content; not production user data",
+    "original_crop_file": "reference-content/main-zara.png",
+    "web_encoding": "Lossless WebP; original dimensions and decoded RGBA preserved exactly"
+  },
+  {
+    "file": "reference-content/maya.webp",
+    "reference": "01-Poetry-Main-Feed.png",
+    "decoded_reference": [
+      1080,
+      2400
+    ],
+    "crop_xyxy": [
+      52,
+      1894,
+      138,
+      1980
+    ],
+    "purpose": "Approved visual reference/demo post content; not production user data",
+    "original_crop_file": "reference-content/maya.png",
+    "web_encoding": "Lossless WebP; original dimensions and decoded RGBA preserved exactly"
+  },
+  {
+    "file": "reference-content/noor.webp",
+    "reference": "01-Poetry-Main-Feed.png",
+    "decoded_reference": [
+      1080,
+      2400
+    ],
+    "crop_xyxy": [
+      566,
+      1897,
+      650,
+      1982
+    ],
+    "purpose": "Approved visual reference/demo post content; not production user data",
+    "original_crop_file": "reference-content/noor.png",
+    "web_encoding": "Lossless WebP; original dimensions and decoded RGBA preserved exactly"
+  },
+  {
+    "file": "reference-content/popular-flower.webp",
+    "reference": "01-Poetry-Main-Feed.png",
+    "decoded_reference": [
+      1080,
+      2400
+    ],
+    "crop_xyxy": [
+      910,
+      1987,
+      1033,
+      2121
+    ],
+    "purpose": "Approved visual reference/demo post content; not production user data",
+    "original_crop_file": "reference-content/popular-flower.png",
+    "web_encoding": "Lossless WebP; original dimensions and decoded RGBA preserved exactly"
+  },
+  {
+    "file": "reference-content/detail-ayesha.webp",
+    "reference": "02-Poetry-Full-Post-Text-Only.png",
+    "decoded_reference": [
+      841,
+      1870
+    ],
+    "crop_xyxy": [
+      49,
+      198,
+      146,
+      296
+    ],
+    "purpose": "Approved visual reference/demo post content; not production user data",
+    "original_crop_file": "reference-content/detail-ayesha.png",
+    "web_encoding": "Lossless WebP; original dimensions and decoded RGBA preserved exactly"
+  },
+  {
+    "file": "reference-content/sara.webp",
+    "reference": "02-Poetry-Full-Post-Text-Only.png",
+    "decoded_reference": [
+      841,
+      1870
+    ],
+    "crop_xyxy": [
+      33,
+      1333,
+      127,
+      1428
+    ],
+    "purpose": "Approved visual reference/demo post content; not production user data",
+    "original_crop_file": "reference-content/sara.png",
+    "web_encoding": "Lossless WebP; original dimensions and decoded RGBA preserved exactly"
+  },
+  {
+    "file": "reference-content/hira-ali.webp",
+    "reference": "02-Poetry-Full-Post-Text-Only.png",
+    "decoded_reference": [
+      841,
+      1870
+    ],
+    "crop_xyxy": [
+      33,
+      1467,
+      127,
+      1563
+    ],
+    "purpose": "Approved visual reference/demo post content; not production user data",
+    "original_crop_file": "reference-content/hira-ali.png",
+    "web_encoding": "Lossless WebP; original dimensions and decoded RGBA preserved exactly"
+  },
+  {
+    "file": "reference-content/detail-zara.webp",
+    "reference": "03-Poetry-Full-Post-With-Image.png",
+    "decoded_reference": [
+      841,
+      1870
+    ],
+    "crop_xyxy": [
+      47,
+      176,
+      140,
+      268
+    ],
+    "purpose": "Approved visual reference/demo post content; not production user data",
+    "original_crop_file": "reference-content/detail-zara.png",
+    "web_encoding": "Lossless WebP; original dimensions and decoded RGBA preserved exactly"
+  },
+  {
+    "file": "reference-content/flower-post.webp",
+    "reference": "03-Poetry-Full-Post-With-Image.png",
+    "decoded_reference": [
+      841,
+      1870
+    ],
+    "crop_xyxy": [
+      140,
+      359,
+      700,
+      874
+    ],
+    "purpose": "Approved visual reference/demo post content; not production user data",
+    "original_crop_file": "reference-content/flower-post.png",
+    "web_encoding": "Lossless WebP; original dimensions and decoded RGBA preserved exactly"
+  },
+  {
+    "file": "reference-content/maha.webp",
+    "reference": "03-Poetry-Full-Post-With-Image.png",
+    "decoded_reference": [
+      841,
+      1870
+    ],
+    "crop_xyxy": [
+      33,
+      1493,
+      113,
+      1575
+    ],
+    "purpose": "Approved visual reference/demo post content; not production user data",
+    "original_crop_file": "reference-content/maha.png",
+    "web_encoding": "Lossless WebP; original dimensions and decoded RGBA preserved exactly"
+  },
+  {
+    "file": "reference-content/sana.webp",
+    "reference": "03-Poetry-Full-Post-With-Image.png",
+    "decoded_reference": [
+      841,
+      1870
+    ],
+    "crop_xyxy": [
+      33,
+      1598,
+      113,
+      1680
+    ],
+    "purpose": "Approved visual reference/demo post content; not production user data",
+    "original_crop_file": "reference-content/sana.png",
+    "web_encoding": "Lossless WebP; original dimensions and decoded RGBA preserved exactly"
+  },
+  {
+    "file": "reference-content/category-ayesha.webp",
+    "reference": "06-Poetry-Category-Posts.png",
+    "decoded_reference": [
+      691,
+      1536
+    ],
+    "crop_xyxy": [
+      41,
+      381,
+      116,
+      453
+    ],
+    "purpose": "Approved visual reference/demo post content; not production user data",
+    "original_crop_file": "reference-content/category-ayesha.png",
+    "web_encoding": "Lossless WebP; original dimensions and decoded RGBA preserved exactly"
+  },
+  {
+    "file": "reference-content/mehak.webp",
+    "reference": "06-Poetry-Category-Posts.png",
+    "decoded_reference": [
+      691,
+      1536
+    ],
+    "crop_xyxy": [
+      41,
+      744,
+      116,
+      818
+    ],
+    "purpose": "Approved visual reference/demo post content; not production user data",
+    "original_crop_file": "reference-content/mehak.png",
+    "web_encoding": "Lossless WebP; original dimensions and decoded RGBA preserved exactly"
+  },
+  {
+    "file": "reference-content/hira-khan.webp",
+    "reference": "06-Poetry-Category-Posts.png",
+    "decoded_reference": [
+      691,
+      1536
+    ],
+    "crop_xyxy": [
+      41,
+      1130,
+      117,
+      1205
+    ],
+    "purpose": "Approved visual reference/demo post content; not production user data",
+    "original_crop_file": "reference-content/hira-khan.png",
+    "web_encoding": "Lossless WebP; original dimensions and decoded RGBA preserved exactly"
+  },
+  {
+    "file": "reference-content/rose-post.webp",
+    "reference": "06-Poetry-Category-Posts.png",
+    "decoded_reference": [
+      691,
+      1536
+    ],
+    "crop_xyxy": [
+      473,
+      799,
+      650,
+      981
+    ],
+    "purpose": "Approved visual reference/demo post content; not production user data",
+    "original_crop_file": "reference-content/rose-post.png",
+    "web_encoding": "Lossless WebP; original dimensions and decoded RGBA preserved exactly"
+  },
+  {
+    "file": "reference-content/main-flower-thumbnail.webp",
+    "reference": "01-Poetry-Main-Feed.png",
+    "decoded_reference": [
+      1080,
+      2400
+    ],
+    "crop_xyxy": [
+      777,
+      1436,
+      1030,
+      1666
+    ],
+    "purpose": "Approved Page 1 reference thumbnail; the same post retains the larger approved detail image",
+    "original_crop_file": "reference-content/main-flower-thumbnail.png",
+    "web_encoding": "Lossless WebP; original dimensions and decoded RGBA preserved exactly"
+  }
+]

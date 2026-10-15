@@ -1,0 +1,29 @@
+/* Canvas #FFF8FA/cards #FFFDFD; primary #E91E63 -> #EC1971;
+   secondary white/#E8B9CC/#C91656; selected fill #FBE1EC. */
+.breast-shell .gs-header h1{font-size:20px}
+.breast-content fieldset{padding:0;border:0;margin:0;min-width:0}
+.breast-content p{font-size:13px;line-height:1.6;color:#927D87}
+.breast-content .breast-muted{font-size:12px;color:#927D87;line-height:1.6}
+.breast-feeling-grid,.breast-area-grid,.breast-observation-grid,.breast-normal-grid{display:grid;gap:6px}
+.breast-feeling-grid,.breast-area-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+.breast-observation-grid,.breast-normal-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.breast-content button[data-breast-choice]{min-height:44px;padding:6px 2px;border:1px solid #E8B9CC;border-radius:6px;background:#FFFFFF;color:#7F6574;font:inherit;font-size:12px;overflow-wrap:anywhere}
+.breast-content button[data-breast-choice][aria-pressed=true]{background:#FBE1EC;color:#C91656}
+.breast-content button:focus-visible{outline:2px solid #C91656;outline-offset:2px}
+.breast-content .period-panel h3{margin-top:20px}
+.breast-normal-grid section{padding:12px 8px;min-width:0}
+.breast-normal-grid strong{font-size:12px;color:#C91656}
+.breast-normal-grid p{font-size:12px}
+.breast-information{padding:16px 12px;margin:22px 0}
+.breast-information ul{padding-left:20px;font-size:13px;line-height:1.8;color:#482B40}
+.breast-information li{margin-bottom:10px}
+.breast-recent-row{padding:12px 0;border-bottom:1px solid #F0E3E9;font-size:13px}
+.breast-recent-row:last-child{border-bottom:0}
+.breast-recent-row>.section-secondary{width:auto;font-size:11px;padding:5px 10px}
+.breast-note{white-space:pre-wrap;overflow-wrap:anywhere}
+.breast-controls{margin:20px 0}
+.breast-controls button{width:100%;font-size:12px;padding:10px}
+.breast-emergency{background:#FFF4F7!important;padding:14px 12px;margin:22px 0}
+.breast-emergency h3{font-size:15px;margin:0 0 12px}
+.breast-emergency p{color:#897480;font-size:13px;line-height:1.7}
+@media(max-width:340px){.breast-content button[data-breast-choice]{font-size:11px}}
