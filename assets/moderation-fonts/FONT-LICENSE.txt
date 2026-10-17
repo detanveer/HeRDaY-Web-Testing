@@ -1,5 +1,0 @@
-Roboto Latin font metadata from the bundled runtime distribution. Used only for moderation.
-
-0: Copyright 2011 Google Inc. All Rights Reserved.
-
-14: http://www.apache.org/licenses/LICENSE-2.0
