@@ -1,0 +1,23 @@
+/* One class family, independent of old section input/focus rules. */
+#beautyApp .hd-comment-compose{display:grid;grid-template-columns:32px minmax(0,1fr);align-items:center;gap:10px;margin:10px 0 0;padding:0;border:0;background:transparent}
+#beautyApp .hd-comment-avatar{display:grid;place-items:center;object-fit:cover;box-sizing:border-box;width:32px;height:32px;min-width:32px;border-radius:50%;background:#FCE4EE;color:#C91656;font:500 12px/1 Poppins,sans-serif;overflow:hidden}
+#beautyApp .hd-comment-field{display:flex;align-items:center;gap:6px;min-width:0;min-height:46px;padding:3px 4px 3px 12px;border:1px solid #E8B9CC;border-radius:24px;background:#fff;box-sizing:border-box}
+#beautyApp .hd-comment-field:focus-within{outline:2px solid #C91656;outline-offset:2px}
+#beautyApp .hd-comment-field textarea{display:block;flex:1;width:100%;min-width:0;min-height:30px;height:30px;max-height:120px;resize:none!important;overflow-y:auto;box-sizing:border-box;margin:0;padding:4px 0;border:0!important;border-radius:0;background:transparent;color:#38232F;font:400 14px/22px Poppins,sans-serif;box-shadow:none!important;outline:none!important}
+#beautyApp .hd-comment-field>button{display:grid;place-items:center;flex:0 0 38px;width:38px;height:38px;min-height:38px;padding:8px;border:0;border-radius:50%;background:linear-gradient(90deg,#E91E63,#EC1971);color:#fff}
+#beautyApp .hd-comment-field>button svg{width:23px;height:23px}
+#beautyApp .hd-comment-field>button:focus-visible{outline:2px solid #38232F;outline-offset:2px}
+#beautyApp .hd-comment-field>button:disabled{opacity:.6;cursor:wait}
+#beautyApp .hd-comment-compose>p{grid-column:1/-1;margin:0;font:400 12px/1.6 Poppins,sans-serif;white-space:normal;overflow-wrap:anywhere}
+#beautyApp .hd-comment-compose>[role=status]:empty{display:none}
+#beautyApp .hd-comment{padding:12px 0;margin:0;min-width:0;font:400 14px/1.6 Poppins,sans-serif;color:#38232F}
+#beautyApp .hd-comment-nested{margin-left:12px;padding-left:10px;border-left:1px solid #E8B9CC}
+#beautyApp .hd-comment-author{display:flex;align-items:center;gap:10px}
+#beautyApp .hd-comment-author>div{min-width:0;flex:1;overflow-wrap:anywhere}
+#beautyApp .hd-comment-author time{display:block;font-size:12px;color:#866674}
+#beautyApp .hd-comment-author>button{border:0;background:transparent;color:#866674;min-width:36px;min-height:36px}
+#beautyApp .hd-comment-author>button svg{width:20px;height:20px}
+#beautyApp .hd-comment>p{margin:8px 0;white-space:pre-wrap;overflow-wrap:anywhere}
+#beautyApp .hd-comment-actions{display:flex;gap:14px}
+#beautyApp .hd-comment-actions>button{border:0;background:transparent;color:#C91656;font:500 12px/1.6 Poppins,sans-serif;min-height:36px}
+#beautyApp .hd-comment-avatar>img{width:100%;height:100%;object-fit:cover}
