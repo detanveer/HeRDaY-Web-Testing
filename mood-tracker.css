@@ -1,0 +1,35 @@
+/* Approved 1080x4510 Mood reference. Canvas #FFF8FA; cards #FFFDFD; fields white.
+   Primary #E91E63 -> #EC1971; secondary white/#E8B9CC/#C91656; selected #FBE1EC. */
+.mood-shell .gs-header h1{font-size:20px}
+.mood-content fieldset{padding:0;border:0;margin:0;min-width:0}
+.mood-content p{font-size:13px;line-height:1.6;color:#927D87}
+.mood-content .mood-muted{font-size:12px;color:#927D87;line-height:1.6}
+.mood-rating-grid,.mood-intensity-grid,.mood-context-grid,.mood-feelings-grid{display:grid;gap:6px}
+.mood-rating-grid,.mood-intensity-grid{grid-template-columns:repeat(5,minmax(0,1fr))}
+.mood-context-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+.mood-feelings-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.mood-content button[data-mood-choice]{min-height:44px;padding:6px 2px;border:1px solid #E8B9CC;border-radius:7px;background:#FFFFFF;color:#7F6574;font:inherit;font-size:12px;overflow-wrap:anywhere}
+.mood-content button[data-mood-choice][aria-pressed=true]{background:#FBE1EC;color:#C91656}
+.mood-content button:focus-visible{outline:2px solid #C91656;outline-offset:2px}
+.mood-rating-grid button{min-height:64px!important;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px}
+.mood-face{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:.75;overflow:visible}
+.mood-rating-grid+h3{margin-top:20px}
+.mood-strength{display:flex;justify-content:space-between;margin:12px 0}
+.mood-week{padding:10px 8px}
+.mood-week-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:3px}
+.mood-week-day{display:flex;flex-direction:column;align-items:center;gap:7px;border-radius:7px;padding:5px 1px;font-size:11px;text-align:center;overflow-wrap:anywhere;color:#7F6574}
+.mood-week-day.selected{background:#FBE1EC;color:#C91656}
+.mood-week-day small{font-size:10px}
+.mood-unrecorded{min-height:24px;display:flex;align-items:center}
+.mood-recent-row{padding:12px 0;border-bottom:1px solid #F0E3E9;font-size:13px}
+.mood-recent-row:last-child{border-bottom:0}
+.mood-recent-row>.section-secondary{width:auto;font-size:11px;padding:5px 10px}
+.mood-note{white-space:pre-wrap;overflow-wrap:anywhere}
+.mood-controls{margin:20px 0}
+.mood-controls button{width:100%;font-size:12px;padding:10px}
+.mood-gentle,.mood-emergency{padding:14px 12px;margin:22px 0}
+.mood-gentle{background:#FCF8FB!important}
+.mood-emergency{background:#FFF4F7!important}
+.mood-gentle h3,.mood-emergency h3{font-size:15px;margin:0 0 12px}
+.mood-gentle p,.mood-emergency p{color:#897480;font-size:13px;line-height:1.7}
+@media(max-width:340px){.mood-content button[data-mood-choice]{font-size:11px}.mood-week-day{font-size:10px}}
