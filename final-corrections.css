@@ -1,0 +1,82 @@
+/* Shared UI roles; artwork, Home geometry and authored language fonts stay intact. */
+:root{--cream:#FFF8FA;--pink:#E91E63;--line:#E8B9CC;--plum:#38232F;--muted:#806B77}
+html,body,body.beauty-mode,body.poetry-mode,#beautyApp{background:#FFF8FA}
+#beautyApp.beauty-shell{font-family:Poppins,sans-serif;color:#38232F;box-sizing:border-box;max-width:520px;padding-bottom:calc(var(--herday-section-nav-clearance,100px) + env(safe-area-inset-bottom) + 16px)}
+#beautyApp.beauty-shell :is(.beauty-head,.poetry-header,.horo-head,.gs-header,.ex-header,.rr-header,.ds-header){display:grid!important;grid-template-columns:44px minmax(0,1fr)!important;grid-template-rows:auto!important;align-items:start!important;gap:0 12px!important;text-align:left!important;min-height:44px;height:auto!important;margin:0 0 18px;padding:12px 0!important;position:relative}
+#beautyApp.beauty-shell :is(.gs-header,.ex-header,.rr-header,.ds-header){margin-inline:16px}
+#beautyApp.beauty-shell :is(.beauty-head,.poetry-header,.horo-head,.gs-header,.ex-header,.rr-header,.ds-header)>button[aria-label=Back]{grid-column:1;grid-row:1;position:static!important;align-self:start!important;transform:none!important;margin:0!important}
+#beautyApp.beauty-shell :is(.beauty-head,.poetry-header,.horo-head,.gs-header,.ex-header,.rr-header,.ds-header)>:is(div,h1){grid-column:2;grid-row:1;min-width:0;margin:0!important;padding:7px 0 0!important}
+#beautyApp.beauty-shell :is(.beauty-head,.poetry-header,.horo-head,.gs-header,.ex-header,.rr-header,.ds-header) h1,#beautyApp.beauty-shell :is(.gs-header,.ex-header,.rr-header,.ds-header)>h1{font:600 20px/1.4 Poppins,sans-serif!important;letter-spacing:normal;text-align:left!important;white-space:normal;overflow-wrap:break-word}
+#beautyApp.beauty-shell :is(.beauty-head,.poetry-header,.horo-head,.gs-header,.ex-header,.rr-header,.ds-header) p{font:400 13px/1.6 Poppins,sans-serif!important;margin:6px 0 0!important;text-align:left;white-space:normal}
+#beautyApp.beauty-shell :is(.gs-header,.ex-header,.rr-header,.ds-header)>p{grid-column:2;grid-row:2}
+#beautyApp .poetry-intro{padding:0;margin:0;text-align:left}
+#beautyApp .horo-date{font:400 12px/1.5 Poppins,sans-serif;margin:6px 0 0;text-align:left}
+#beautyApp :is(.account-section-title,.section-title,.content-card>h2,.my-post-card>h2,.admin-module h3,.account-identity h2,.hm-h2,.gs-thread>h2,.poetry-comments>h2,.poetry-latest-row>h2,.poetry-posts-heading,.poetry-popular-heading){font-family:Poppins,sans-serif!important;font-size:18px!important;line-height:1.45!important;font-weight:600!important;white-space:normal}
+#beautyApp :is(.account-list,.settings-list,.my-posts-page,.hm-wrap,.ex-page,.section-body){font-family:Poppins,sans-serif;font-size:14px;line-height:1.6}
+#beautyApp :is(.bcard,.my-post-card,.poetry-card,.hm-card,.ex-card,.section-card,.settings-static,.account-row){background-color:#FFFDFD}
+#beautyApp :is(.field,.searchbox,.poetry-search,.poetry-form input,.poetry-form textarea,.poetry-form select,.gs-compose-input,.poetry-composer-input){background-color:#FFFFFF}
+#beautyApp :is(.btn.primary,.section-primary,.ex-primary,.hm-btn.primary,.poetry-submit-shortcut,.poetry-final-submit){background:linear-gradient(90deg,#E91E63,#EC1971);color:#FFF}
+#beautyApp .poetry-shortcuts .active{background:#E91E63;border-color:#E91E63;color:#FFF}
+#beautyApp .poetry-page{--poetry-surface:#FFFDFD;--poetry-ink:#38232F;--poetry-muted:#806B77;--poetry-accent:#E91E63}
+#beautyApp :is(.poetry-shortcuts button,.poetry-submit-shortcut,.poetry-actions button,.poetry-meta,.poetry-composer,.poetry-comment-copy>b,.poetry-comment time){font-family:Poppins,sans-serif}
+#beautyApp .poetry-submit-shortcut{font-size:14px!important;min-height:44px}
+#beautyApp :is(.poetry-comment,.gs-comment){background:transparent;border:0;border-bottom:1px solid #F0DCE4;border-radius:0;padding:14px 0;margin:0;box-shadow:none}
+#beautyApp .gs-reply,#beautyApp .herday-comment-reply{border-left:1px solid #E8B9CC;border-bottom:0;padding-left:12px;margin-left:12px}
+#beautyApp .gs-comment>p{font-size:14px;line-height:1.6;white-space:pre-wrap;overflow-wrap:anywhere;margin:10px 0}
+#beautyApp .gs-comment .section-author strong,#beautyApp .poetry-comment-copy>b{font-size:14px;line-height:1.4}
+#beautyApp .gs-comment-actions button{font:13px/1.5 Poppins,sans-serif;background:none;border:0;color:#C91656;padding:6px}
+#beautyApp :is(.gs-comment-composer,.poetry-composer){display:grid;grid-template-columns:32px minmax(0,1fr);gap:10px;align-items:start;background:transparent;border:0;border-radius:0;padding:12px 0;margin:8px 0;box-shadow:none}
+#beautyApp :is(.gs-compose-input,.poetry-composer-input){display:flex;gap:6px;align-items:center;min-width:0;min-height:44px;border:1px solid #E8B9CC;border-radius:24px;padding:3px 4px 3px 12px;box-sizing:border-box}
+#beautyApp :is(.gs-compose-input textarea,.poetry-composer-input input){font:14px/1.6 Poppins,sans-serif;color:#38232F;background:transparent;border:0!important;box-shadow:none;resize:vertical;width:100%;min-width:0;min-height:30px;height:30px;max-height:120px;padding:4px 0;margin:0;box-sizing:border-box}
+#beautyApp :is(.gs-compose-input,.poetry-composer-input)>button{flex:0 0 38px;display:grid;place-items:center;position:static;width:38px;height:38px;min-height:38px;border:0;border-radius:50%;padding:8px;background:linear-gradient(90deg,#E91E63,#EC1971);color:white}
+#beautyApp :is(.gs-compose-input,.poetry-composer-input)>button svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.65}
+#beautyApp :is(.gs-comment-composer,.poetry-composer)>p{grid-column:1/-1;margin:0;font-size:12px;white-space:normal}
+#beautyApp :is(.gs-comment-composer,.poetry-composer)>p:empty{display:none}
+#beautyApp :is(.section-avatar,.poetry-composer-avatar,.poetry-comment>.poetry-avatar){width:32px;height:32px;min-width:32px;font:12px/1 Poppins,sans-serif}
+#beautyApp .gs-compose-reply{grid-column:1/-1}
+#beautyApp .ex-share{margin:20px 0}
+#beautyApp button[data-public-user]{border:0;background:transparent;padding:0;color:inherit;font:inherit;text-align:inherit;cursor:pointer;text-decoration:none}
+#beautyApp button[data-public-user]:hover{text-decoration:underline}
+.home-notifications{position:relative;border:0;padding:7px;background:transparent;cursor:pointer;min-height:44px;min-width:44px}
+.notification-badge{position:absolute;top:1px;right:0;background:#C91656;color:white;border-radius:99px;padding:1px 5px;font:11px/1.5 Poppins,sans-serif}
+.account-feature-card{padding:16px;border:1px solid #E8B9CC;border-radius:16px;background:#FFFDFD;margin:12px 0;overflow-wrap:anywhere}
+.account-feature-card h2{font:600 18px/1.5 Poppins,sans-serif}
+.account-feature-card p{font:14px/1.6 Poppins,sans-serif;white-space:pre-wrap;overflow-wrap:anywhere}
+.account-feature-card button,.account-features-shell>button{min-height:44px;border:1px solid #E8B9CC;background:white;border-radius:12px;padding:8px 12px;color:#C91656;font:14px/1.5 Poppins,sans-serif;cursor:pointer}
+.account-feature-card .unread{font-weight:600}
+.account-feature-card .public-photo{width:72px;height:72px;object-fit:cover;border-radius:50%}
+.account-admin-controls{display:flex;flex-wrap:wrap;gap:8px;padding-top:12px}
+.account-feature-error{color:#A21245;white-space:normal;font-size:13px}
+#beautyApp .public-post-link{display:block;width:100%;text-align:left;margin:10px 0}
+#beautyApp :is(.btn,.hm-btn,.ex-button){font-family:Poppins,sans-serif;font-size:14px;line-height:1.5;white-space:normal;overflow-wrap:anywhere}
+#beautyApp :is(.account-row,.settings-static){min-width:0}
+#beautyApp :is(.account-row,.settings-static)>div{min-width:0}
+body>.nav>div[role=button]{cursor:pointer}
+.home-notifications .bell{position:static;display:block;width:31px;height:31px;object-fit:contain}
+#beautyApp.beauty-shell :is(.ex-header,.rr-header,.ds-header){margin-inline:0}
+#beautyApp .image-recovery{font:12px/1.5 Poppins,sans-serif;flex-basis:100%}
+#beautyApp .image-recovery summary{cursor:pointer;color:#806B77;padding:8px 0}
+#beautyApp .poetry-meta>button[data-public-user]{display:block;width:32px;height:32px;flex-shrink:0}
+#beautyApp .poetry-meta>button[data-public-user] .poetry-avatar{width:32px;height:32px}
+#beautyApp :is(h2,h3,h4):not(:lang(ur)):not(:lang(ar)):not(:lang(bn)):not(:lang(hi)){font-family:Poppins,sans-serif!important;line-height:1.45}
+#beautyApp :is(.location-now b,.provider-cta b,.settings-static b,.account-row b,.poetry-empty){font-family:Poppins,sans-serif!important;line-height:1.5}
+#beautyApp .location-now b{font-size:18px}
+#beautyApp .provider-cta b{font-size:16px}
+#beautyApp .poetry-empty{font-size:14px;max-width:none}
+#beautyApp .poetry-search{min-height:40px;height:auto}
+#beautyApp .poetry-search input{font:13px/1.5 Poppins,sans-serif;min-height:36px}
+#beautyApp .inline-location-icon{display:inline-block;vertical-align:middle;width:20px;height:20px;flex-shrink:0}
+#beautyApp .loc-tabs button{font:600 13px/1.5 Poppins,sans-serif;white-space:normal;padding:10px 6px}
+#beautyApp .loc-tabs button svg{width:16px;height:16px}
+#beautyApp button.section-avatar[data-public-user]{display:grid;place-items:center;background:#F5E0EA;border:0;border-radius:50%;font:12px/1 Poppins,sans-serif;padding:0;text-align:center}
+#beautyApp .hm-profile-bell{border:0;background:transparent;cursor:pointer;min-width:44px;min-height:44px}
+#beautyApp :is(.ex-form,.period-content,.poetry-form) :is(input:not([type=checkbox]):not([type=radio]):not([type=file]),textarea,select){background-color:#FFF}
+#beautyApp.beauty-shell:not(.herday-section){width:min(calc(100% - 32px),488px)!important}
+#beautyApp .horoscope-page :is(.view-horoscope,.share-horo){font:600 14px/1.5 Poppins,sans-serif!important;background:linear-gradient(90deg,#E91E63,#EC1971);color:#FFF}
+#beautyApp .horoscope-page :is(.zodiac-section>p,.summary-copy>p,.sign-copy>p){font:400 13px/1.6 Poppins,sans-serif!important}
+#beautyApp .horoscope-page .zodiac-section>h2{font:600 18px/1.45 Poppins,sans-serif!important}
+#beautyApp .horoscope-page .zodiac-card b{font:500 13px/1.4 Poppins,sans-serif!important}
+#beautyApp .horoscope-page .horo-live-copy{font:400 14px/1.7 Poppins,sans-serif!important}
+
+/* One top inset, owned by the shared header rather than its page wrapper. */
+#beautyApp.beauty-shell :is(.poetry-page,.horoscope-page,.ex-page,.rr-page,.ds-page){padding-top:0!important}
