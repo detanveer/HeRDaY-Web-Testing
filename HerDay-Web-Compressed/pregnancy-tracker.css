@@ -1,0 +1,48 @@
+/* Scoped approved Pregnancy surfaces. Check-in/planning persistence is a later stage. */
+.pregnancy-summary{padding:16px 12px}
+.pregnancy-summary>strong{font-size:22px;line-height:1.4;color:#482B40}
+.pregnancy-summary p{font-size:13px;line-height:1.6;color:#927D87;margin:8px 0 18px}
+.pregnancy-summary h2{font-size:17px!important;margin:8px 0!important;line-height:1.5}
+.pregnancy-summary>span{display:block;font-size:13px;line-height:1.5;color:#C91656}
+.pregnancy-source{font-size:12px!important;line-height:1.6;color:#927D87}
+.pregnancy-content progress{display:block;width:100%;height:10px;accent-color:#C91656;margin:16px 0}
+.pregnancy-content .period-panel>p{font-size:14px;line-height:1.6}
+.pregnancy-controls{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}
+.pregnancy-controls button{padding:8px 12px;font-size:12px;flex:1}
+.pregnancy-emergency{background:#FFF4F7!important;padding:16px 14px;margin:20px 0}
+.pregnancy-emergency h3{font-size:15px;margin:0 0 12px}
+.pregnancy-emergency p{font-size:13px;line-height:1.7;color:#897480;margin:0}
+.pregnancy-trimester{display:inline-block!important;background:#FDEDF3;border-radius:12px;padding:5px 10px;margin:8px 0;font-size:11px!important;line-height:1.5;color:#C91656!important}
+.pregnancy-week-heading{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.pregnancy-week-heading h3,.pregnancy-size h3{font-size:15px;margin:0}
+.pregnancy-week .pregnancy-reference-note,.pregnancy-reference-note{font-size:12px!important;line-height:1.6;color:#897480}
+.pregnancy-reference{display:inline-block;color:#C91656;font-size:12px;line-height:1.5;text-decoration:underline;text-underline-offset:3px;margin-top:10px}
+.pregnancy-measurement{font-size:20px!important;color:#482B40!important}
+.pregnancy-measurement small{display:block;font-size:12px;line-height:1.6;color:#897480;margin-top:4px}
+.pregnancy-week-picker{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px;margin:18px 0}
+.pregnancy-week-picker button{padding:9px 0;min-height:40px;border:1px solid #E8B9CC;border-radius:10px;background:#FFFFFF;color:#C91656;font:inherit;font-size:12px;cursor:pointer}
+.pregnancy-week-picker button[aria-pressed="true"]{background:linear-gradient(135deg,#E91E63,#EC1971);border-color:transparent;color:#FFFFFF}
+.pregnancy-week-picker button:focus-visible{outline:2px solid #C91656;outline-offset:2px}
+.pregnancy-checkin{margin:22px 0}
+.pregnancy-check-choices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin:12px 0 18px}
+.pregnancy-check-choices[data-pregnancy-check-group="mood"]{grid-template-columns:repeat(5,minmax(0,1fr))}
+.pregnancy-check-choices button{min-height:40px;padding:6px 2px;border:1px solid #E8B9CC;border-radius:6px;background:#FFFFFF;color:#7F6574;font:inherit;font-size:11px;cursor:pointer}
+.pregnancy-check-choices button[aria-pressed="true"]{background:#FBE1EC;color:#C91656}
+.pregnancy-check-choices button:focus-visible{outline:2px solid #C91656;outline-offset:2px}
+.pregnancy-check-row{margin:12px 0}
+.pregnancy-check-row>strong{color:#482B40;font-size:14px}
+.pregnancy-check-row>p{font-size:12px!important;color:#897480}
+.pregnancy-check-note{white-space:pre-wrap;overflow-wrap:anywhere}
+.pregnancy-check-recent{display:grid;grid-template-columns:auto 1fr;gap:6px 12px;align-items:center}
+.pregnancy-check-recent>p{margin:0}
+.pregnancy-check-recent>button{grid-column:2;justify-self:start;font-size:11px;padding:4px 8px}
+.pregnancy-appointments{margin:22px 0}
+.pregnancy-appointments h3{font-size:15px;color:#482B40;line-height:1.5}
+.pregnancy-appointments p{font-size:13px;color:#897480;line-height:1.6;overflow-wrap:anywhere}
+.pregnancy-appointments .period-panel>button{display:inline-block;margin:6px 4px 0 0;font-size:12px;padding:8px 10px}
+.pregnancy-reminders{margin:22px 0}
+.pregnancy-reminders h3{font-size:15px;color:#482B40;line-height:1.5}
+.pregnancy-reminder-list{padding-left:18px;margin:12px 0;color:#482B40}
+.pregnancy-reminder-list li{font-size:13px;line-height:1.6;margin:10px 0;overflow-wrap:anywhere}
+.pregnancy-reminder-list li>div{display:flex;gap:8px;margin-top:5px}
+.pregnancy-reminder-list button{padding:4px 8px;font-size:11px}
