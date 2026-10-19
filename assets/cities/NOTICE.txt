@@ -1,0 +1,5 @@
+City and country data: GeoNames, https://www.geonames.org/
+Source: cities500.zip and countryInfo.txt, downloaded 2026-10-19.
+Licensed under Creative Commons Attribution 4.0: https://creativecommons.org/licenses/by/4.0/
+Adaptation: city names, ASCII names and alternate names grouped by country; other fields omitted.
+Coverage: cities with population >500 or administrative seats; manual city entry supports locations absent from this dataset.
