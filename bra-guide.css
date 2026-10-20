@@ -1,0 +1,16 @@
+/* Approved canvas #FFF8FA/cards #FFFDFD; white inputs; primary #E91E63 -> #EC1971;
+   secondary white/#E8B9CC/#C91656; selected #FBE1EC. */
+.bra-shell .gs-header h1{font-size:20px}
+.bra-content p,.bra-content li,.bra-content dd{font-size:13px;line-height:1.65;color:#927D87}
+.bra-panel,.bra-summary{padding:16px 12px;margin:22px 0}
+.bra-panel h3,.bra-summary h3{font-size:15px;margin:0 0 12px}
+.bra-unit-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+.bra-unit-grid button{min-height:44px;border:1px solid #E8B9CC;border-radius:7px;background:#FFFFFF;color:#927D87;font:inherit;font-size:13px}
+.bra-unit-grid button[aria-pressed=true]{background:#FBE1EC;color:#C91656}
+.bra-content label{display:grid;gap:8px;font-size:12px;color:#927D87}
+.bra-content input{width:100%;box-sizing:border-box;min-height:44px;background:#FFFFFF;border:1px solid #F0E3E9;border-radius:6px;padding:9px;font:inherit;font-size:13px;color:#482B40}
+.bra-summary dl,.bra-fit{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);gap:12px}
+.bra-summary dt,.bra-fit dt{font-size:12px;color:#C91656}
+.bra-summary dd,.bra-fit dd{margin:0;overflow-wrap:anywhere}
+.bra-content .section-primary,.bra-content>.section-secondary{width:100%;min-height:44px}
+.bra-content button:focus-visible{outline:2px solid #C91656;outline-offset:2px}

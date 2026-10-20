@@ -1,0 +1,26 @@
+/* Self-hosted Noto fonts, original SIL OFL licenses in assets/fonts.
+   Explicit content language is required to distinguish Urdu from Arabic. */
+@font-face{font-family:'HerDay Nastaliq';src:url('assets/fonts/notonastaliqurdu.woff2') format('woff2');font-weight:400 700;font-style:normal;font-display:swap}
+@font-face{font-family:'HerDay Devanagari';src:url('assets/fonts/notosansdevanagari.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'HerDay Bengali';src:url('assets/fonts/notosansbengali.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'HerDay Arabic';src:url('assets/fonts/notonaskharabic.woff2') format('woff2');font-weight:400 700;font-style:normal;font-display:swap}
+:is(#beautyApp,#herdayEdit) :lang(ur):is(div,section,main,h1,h2,h3,p,button,b,span,input,textarea){font-family:'HerDay Nastaliq',serif;line-height:2.3;letter-spacing:normal}
+:is(#beautyApp,#herdayEdit) :lang(hi):is(div,section,main,h1,h2,h3,p,button,b,span,input,textarea){font-family:'HerDay Devanagari',sans-serif;line-height:1.7;letter-spacing:normal}
+:is(#beautyApp,#herdayEdit) :lang(bn):is(div,section,main,h1,h2,h3,p,button,b,span,input,textarea){font-family:'HerDay Bengali',sans-serif;line-height:1.7;letter-spacing:normal}
+:is(#beautyApp,#herdayEdit) :lang(ar):is(div,section,main,h1,h2,h3,p,button,b,span,input,textarea){font-family:'HerDay Arabic',serif;line-height:1.8;letter-spacing:normal}
+/* Urdu needs extra vertical room; do not clip Nastaliq ascenders/descenders. */
+:is(#beautyApp,#herdayEdit) [lang='ur'] :is(.reading-card,.insight-card,.summary-copy,.sign-copy){overflow:visible}
+:is(#beautyApp,#herdayEdit) .language-tabs button[lang='ur']{font-size:16px;padding-block:8px}
+
+:is(#beautyApp,#herdayEdit) .content-language-label{display:block;font:500 14px/1.5 Poppins,sans-serif;color:#360018;margin:16px 0}
+:is(#beautyApp,#herdayEdit) .content-language-label select{display:block;box-sizing:border-box;width:100%;min-height:44px;margin-top:8px;padding:10px 12px;border:1px solid #E8B9CC;border-radius:10px;background:#FFFFFF;color:#360018;font:14px/1.5 Poppins,sans-serif}
+:is(#beautyApp,#herdayEdit) .content-translation{clear:both;margin:12px 0;font:14px/1.6 Poppins,sans-serif;text-align:left}
+:is(#beautyApp,#herdayEdit) .content-translation button.content-translate-button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;white-space:normal;padding:8px 14px;background:#FFFFFF;color:#C91656;border:1px solid #E8B9CC;border-radius:10px;font:500 13px/1.5 Poppins,sans-serif;cursor:pointer}
+:is(#beautyApp,#herdayEdit) .content-translation button:disabled{opacity:.65;cursor:wait}
+:is(#beautyApp,#herdayEdit) .content-translation-output{background:#FFFDFD;border:1px solid #E8B9CC;border-radius:12px;padding:14px;margin-top:12px}
+:is(#beautyApp,#herdayEdit) .content-translation-output h3{font:600 18px/1.5 Poppins,sans-serif;margin:8px 0;overflow-wrap:anywhere}
+:is(#beautyApp,#herdayEdit) .content-translation-output p{font:400 14px/1.7 Poppins,sans-serif;white-space:pre-wrap;overflow-wrap:anywhere;margin:8px 0}
+:is(#beautyApp,#herdayEdit) .content-translation-output small,:is(#beautyApp,#herdayEdit) .content-translation-status{font:400 12px/1.6 Poppins,sans-serif;color:#805368;white-space:normal}
+:is(#beautyApp,#herdayEdit) .content-translate-button:focus-visible,:is(#beautyApp,#herdayEdit) [data-content-language]:focus-visible{outline:2px solid #C91656;outline-offset:3px}
+:is(#beautyApp,#herdayEdit) .poetry-preview:lang(ur),:is(#beautyApp,#herdayEdit) .poetry-full-body:lang(ur){padding-block:.35em;line-height:2.3}
+:is(#beautyApp,#herdayEdit) .poetry-card h3:lang(ur){padding-block:.2em;line-height:2.3;letter-spacing:normal}
