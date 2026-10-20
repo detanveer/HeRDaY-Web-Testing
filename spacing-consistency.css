@@ -1,0 +1,88 @@
+/* Compact shared rhythm; native artwork and private Diary logic remain intact. */
+:root{--herday-section-gap:16px;--herday-control-gap:12px}
+body.beauty-mode{padding-bottom:0!important}
+#beautyApp.beauty-shell{padding-bottom:calc(var(--herday-section-nav-clearance,86px) + 12px)!important}
+#beautyApp .beauty-bottom-space{display:none}
+#beautyApp.beauty-shell :is(.section-body,.ex-page,.rr-page,.ds-page,.gs-landing-body,.gs-tools-body,.poetry-page){padding-bottom:0!important}
+#beautyApp.beauty-shell :is(.beauty-head,.poetry-header,.horo-head,.gs-header,.ex-header,.rr-header,.ds-header){padding:12px 0 8px!important;margin-bottom:12px!important;row-gap:0!important}
+#beautyApp.beauty-shell :is(.beauty-head,.poetry-header,.horo-head,.gs-header,.ex-header,.rr-header,.ds-header)>div{padding:7px 0 0!important;min-width:0}
+#beautyApp.beauty-shell :is(.beauty-head,.poetry-header,.horo-head,.gs-header,.ex-header,.rr-header,.ds-header)>div>h1{padding:0!important;margin:0!important}
+#beautyApp.beauty-shell :is(.beauty-head,.poetry-header,.horo-head,.gs-header,.ex-header,.rr-header,.ds-header)>div>p{margin:4px 0 0!important;padding:0!important;line-height:1.55!important}
+#beautyApp.beauty-shell .gs-header:has(.diary-gear)>.herday-heading{padding-right:44px!important}
+#beautyApp.herday-section .gs-feed-toolbar{margin:0 0 12px!important;gap:12px}
+#beautyApp.herday-section .gs-feed-toolbar+.section-post{margin-top:0!important}
+#beautyApp.herday-section .gs-tools-hero{margin:0}
+#beautyApp.herday-section .gs-tools-body{padding-top:12px}
+#beautyApp.herday-section .gs-tools-info{padding:12px}
+#beautyApp.herday-section .gs-tools-title{margin:16px 0 6px}
+#beautyApp.herday-section .gs-tools-subtitle{margin:0 0 12px}
+/* Diary keeps useful touch areas, but spacing has a single owner. */
+#beautyApp.herday-section .diary-content{gap:12px!important;padding-top:0!important}
+#beautyApp.herday-section .diary-content>.diary-settings-group{margin-top:4px!important}
+#beautyApp.herday-section .diary-content>.diary-settings-group>h2{margin:0 0 10px!important}
+#beautyApp.herday-section .diary-content>h2{margin:4px 0 0!important}
+#beautyApp.herday-section .diary-content .section-card{padding:14px}
+#beautyApp.herday-section .diary-settings-intro{min-height:0!important;padding:14px!important;gap:14px!important}
+#beautyApp.herday-section .diary-settings-group .section-card{padding:12px 14px!important}
+#beautyApp.herday-section .diary-setting-row{padding:10px 0!important;min-height:64px;gap:12px}
+#beautyApp.herday-section .diary-setting-row p,#beautyApp.herday-section .diary-setting-row small{margin:4px 0 0}
+#beautyApp.herday-section .diary-pin-panel{padding:16px 12px!important}
+#beautyApp.herday-section .diary-pin .diary-lock{margin:0 auto 10px}
+#beautyApp.herday-section .diary-pin-panel h2{margin:8px 0!important}
+#beautyApp.herday-section .diary-pin .diary-pin-panel>p{margin:8px 0 12px!important}
+#beautyApp.herday-section .diary-pin-row{padding:6px 0!important}
+#beautyApp.herday-section .diary-keypad{margin:12px 0;gap:8px}
+#beautyApp.herday-section .diary-forgot{margin:8px auto}
+#beautyApp.herday-section .diary-content>.diary-private{margin:0!important;padding:4px 0!important}
+#beautyApp.herday-section .diary-content :is([data-diary-recovery-status],.diary-status):empty{display:none}
+/* Empty and populated comment threads use the same compact rhythm. */
+#beautyApp.beauty-shell :is(.gs-thread,.poetry-comments){margin:16px 0 0!important;padding:0!important}
+#beautyApp.beauty-shell :is(.gs-thread,.poetry-comments)>h2{margin:0 0 10px!important}
+#beautyApp.beauty-shell .gs-comments{margin:0!important;padding:0!important;min-height:0}
+#beautyApp.beauty-shell .gs-comments>.gs-message,#beautyApp.beauty-shell .poetry-comments>p{margin:0!important;padding:0!important;font:400 13px/1.6 Poppins,sans-serif!important;white-space:normal}
+#beautyApp.beauty-shell :is(.gs-comment,.poetry-comment){padding:12px 0!important;margin:0!important}
+#beautyApp.beauty-shell .gs-comments>.gs-comment:first-child,#beautyApp.beauty-shell .poetry-comments>h2+.poetry-comment{padding-top:0!important}
+#beautyApp.beauty-shell :is(.gs-comment-composer,.poetry-composer){padding:0!important;margin:10px 0 0!important;gap:10px;align-items:center}
+#beautyApp.beauty-shell .gs-compose-input textarea{resize:none!important;min-height:30px!important;max-height:120px}
+#beautyApp.beauty-shell :is(.gs-comment-composer,.poetry-composer)>[role=status]:empty{display:none!important}
+/* Poetry page, category, editor and detail spacing. Authored verse retains its line breaks. */
+#beautyApp .poetry-main-hero{margin:0 0 10px!important}
+#beautyApp .poetry-submit-shortcut{margin:0 0 8px!important}
+#beautyApp .poetry-shortcuts{margin:0 0 12px!important}
+#beautyApp .poetry-latest-row{margin:0 0 10px!important}
+#beautyApp .poetry-feed{gap:12px}
+#beautyApp .poetry-category-feed .poetry-category-hero{margin-bottom:12px}
+#beautyApp .poetry-category-feed .poetry-category-intro{margin:12px 0}
+#beautyApp .poetry-popular-heading{margin:16px 0 10px!important}
+#beautyApp .poetry-popular-grid:has(>.poetry-empty){display:block}
+#beautyApp .poetry-empty{margin:0!important;padding:10px 0!important;max-width:none}
+#beautyApp .poetry-submit .poetry-form{margin-top:0}
+/* Every Load More control, including async/private history lists. */
+#beautyApp.beauty-shell button.herday-load-more{display:flex!important;align-items:center!important;justify-content:center!important;box-sizing:border-box!important;width:100%!important;min-width:0!important;min-height:44px!important;height:44px!important;max-height:none!important;margin:12px 0 0!important;padding:10px 16px!important;border:1px solid #E8B9CC!important;border-radius:12px!important;background:#FFFFFF!important;color:#C91656!important;box-shadow:none!important;font:500 14px/1.5 Poppins,sans-serif!important;letter-spacing:normal!important;text-align:center!important;text-transform:none!important;white-space:normal!important;cursor:pointer;grid-column:1/-1!important}
+#beautyApp.beauty-shell button.herday-load-more:disabled{opacity:.6!important;cursor:wait}
+#beautyApp.beauty-shell button.herday-load-more:focus-visible{outline:2px solid #C91656;outline-offset:3px}
+/* Comment menu and editor use the existing palette and preserve focus in a modal. */
+.herday-comment-options{box-sizing:border-box;width:min(360px,calc(100% - 32px));max-height:calc(100dvh - 48px);overflow:auto;margin:auto;padding:16px;border:1px solid #E8B9CC;border-radius:16px;background:#FFFDFD;color:#38232F;font:400 14px/1.6 Poppins,sans-serif}
+.herday-comment-options::backdrop{background:#38232F66}
+.herday-comment-options>button{display:block;width:100%;min-height:44px;border:0;border-bottom:1px solid #F0DCE4;background:none;text-align:left;color:inherit;padding:10px;font:inherit;cursor:pointer}
+.herday-comment-options label{display:block;font-weight:600;margin:0 0 8px}
+.herday-comment-options textarea{display:block;box-sizing:border-box;width:100%;min-height:110px;resize:vertical;background:#FFF;border:1px solid #E8B9CC;border-radius:10px;padding:10px;font:inherit;color:inherit}
+.herday-comment-options p{margin:8px 0;font-size:13px;white-space:normal;overflow-wrap:anywhere}
+.herday-comment-options .comment-editor-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:12px}
+.herday-comment-options .comment-editor-actions button{min-height:44px;padding:8px 12px;border:1px solid #E8B9CC;border-radius:10px;background:white;color:#C91656;font:inherit;cursor:pointer}
+.herday-comment-options .comment-editor-actions button[type=submit]{background:linear-gradient(90deg,#E91E63,#EC1971);border:0;color:white}
+.herday-comment-options button:disabled{opacity:.6;cursor:wait}
+#beautyApp.beauty-shell .section-post-actions>button{font-size:11px!important;gap:3px!important}
+#beautyApp.beauty-shell .section-post-actions .action-word{white-space:nowrap;overflow-wrap:normal}
+
+/* Shared header geometry, rendered before paint; subtitle wrapping stays natural. */
+#beautyApp.beauty-shell :is(.beauty-head,.poetry-header,.horo-head,.gs-header,.ex-header,.rr-header,.ds-header){display:grid!important;grid-template-columns:40px minmax(0,1fr)!important;align-items:start!important;column-gap:12px!important}
+#beautyApp.beauty-shell :is(.beauty-head,.poetry-header,.horo-head,.gs-header,.ex-header,.rr-header,.ds-header)>button:first-child{width:40px!important;height:40px!important;min-height:40px!important;margin:0!important;padding:8px!important;display:grid;place-items:center;align-self:start}
+#beautyApp.beauty-shell :is(.beauty-head,.poetry-header,.horo-head,.gs-header,.ex-header,.rr-header,.ds-header)>button:first-child svg{width:24px!important;height:24px!important}
+#beautyApp.beauty-shell :is(.beauty-head,.poetry-header,.horo-head,.gs-header,.ex-header,.rr-header,.ds-header)>div{grid-column:2;grid-row:1}
+#beautyApp .herday-reading-target{display:block;width:100%;min-width:0;border:0;background:transparent;color:inherit;text-align:inherit;font:inherit;padding:0;cursor:pointer;white-space:pre-wrap;overflow-wrap:anywhere}
+#beautyApp .herday-reading-target:focus-visible{outline:2px solid #C91656;outline-offset:-2px;border-radius:4px}
+#beautyApp.beauty-shell :is(.beauty-head,.poetry-header,.horo-head,.gs-header,.ex-header,.rr-header,.ds-header)+*{margin-top:0!important}
+#beautyApp.beauty-shell .ds-page>.ds-header{margin-bottom:0!important}
+
+#beautyApp.beauty-shell :is(.beauty-head,.poetry-header,.horo-head,.gs-header,.ex-header,.rr-header,.ds-header)>div>p{color:#866674}
