@@ -1,0 +1,29 @@
+/* Canvas #FFF8FA/cards #FFFDFD; white fields; primary #E91E63 -> #EC1971;
+   secondary white/#E8B9CC/#C91656; selected #FBE1EC. */
+.water-shell .gs-header h1{font-size:20px}
+.water-content fieldset{padding:0;border:0;margin:0;min-width:0}
+.water-content p{font-size:13px;line-height:1.6;color:#927D87}
+.water-content .water-muted{font-size:12px;color:#927D87;line-height:1.6}
+.water-care-grid,.water-mood-grid{display:grid;gap:6px}
+.water-care-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.water-mood-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+.water-content button[data-water-choice]{min-height:44px;padding:6px 2px;border:1px solid #E8B9CC;border-radius:6px;background:#FFFFFF;color:#7F6574;font:inherit;font-size:12px;overflow-wrap:anywhere}
+.water-content button[data-water-choice][aria-pressed=true]{background:#FBE1EC;color:#C91656}
+.water-content button:focus-visible{outline:2px solid #C91656;outline-offset:2px}
+.water-content .water-add{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:10px}
+.water-custom{display:flex;gap:12px;align-items:center;justify-content:space-between;font-size:13px;margin:12px 0;overflow-wrap:anywhere}
+.water-custom>.section-secondary{width:auto!important;margin:0!important;min-width:64px}
+.water-week{padding:12px 8px}
+.water-week-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:3px}
+.water-week-grid>div{display:flex;flex-direction:column;align-items:center;gap:12px;border-radius:7px;padding:8px 1px;min-height:70px;font-size:10px;text-align:center;color:#7F6574;overflow-wrap:anywhere}
+.water-week-grid .selected{background:#FBE1EC;color:#C91656}
+.water-recent-row{padding:12px 0;border-bottom:1px solid #F0E3E9;font-size:13px}
+.water-recent-row:last-child{border-bottom:0}
+.water-recent-row>.section-secondary{width:auto;font-size:11px;padding:5px 10px}
+.water-note{white-space:pre-wrap;overflow-wrap:anywhere}
+.water-controls{margin:20px 0}
+.water-controls button{width:100%;font-size:12px;padding:10px}
+@media(max-width:340px){.water-content button[data-water-choice]{font-size:11px}}
+
+.water-bar-track{height:64px;display:flex;align-items:flex-end;justify-content:center;width:100%}
+.water-bar{display:block;width:12px;border-radius:4px 4px 0 0;background:#E976A1}
