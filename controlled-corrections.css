@@ -1,0 +1,43 @@
+/* Scoped additions only. Approved canvas #FFF8FA; normal cards #FFFDFD;
+   existing white surfaces #FFFFFF; primary #E91E63 to #EC1971;
+   secondary white / #E8B9CC / #C91656. */
+body.beauty-mode .beauty-shell .account-settings-head .beauty-head{display:flex;align-items:center;gap:12px;margin:24px 0 22px;padding:0}
+.account-settings-head .beauty-head .back{position:static;flex:none;margin:0;min-height:40px}
+.account-settings-head .beauty-head>div{min-width:0;padding:0}
+.account-settings-head .beauty-head h1{margin:0;line-height:1.2}
+.poetry-success-notice{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(100px + env(safe-area-inset-bottom));width:max-content;max-width:90vw;background:#FFFDFD;color:#4b2b40;border:1px solid #E8B9CC;border-radius:14px;padding:14px 18px;box-shadow:0 5px 20px #4b2b4020;z-index:1000;font:500 14px/1.5 Poppins,sans-serif}
+#poetryCanonicalCategories>[role="alert"],#poetryCanonicalCategories>[role="status"]{grid-column:1/-1;overflow-wrap:anywhere}
+.my-posts-page{padding-bottom:calc(112px + env(safe-area-inset-bottom))}
+.my-post-card{background:#FFFDFD;border:1px solid #f0dde6;border-radius:16px;padding:18px;margin:14px 0;box-shadow:0 5px 18px #572b430b;overflow-wrap:anywhere}
+.my-post-meta{display:flex;gap:12px;justify-content:space-between;align-items:center;font-size:13px}
+.my-post-status{border-radius:20px;padding:5px 10px;background:#fff0f6;color:#C91656}
+.my-post-status.status-approved{background:#e7f8ed;color:#18804b}
+.my-post-status.status-rejected{background:#fff0f6;color:#C91656}
+.my-post-card h2{font-size:20px;margin:16px 0 10px}
+.my-post-body{white-space:pre-wrap;font-size:14px;line-height:1.6}
+.my-post-reason{font-size:13px;line-height:1.5;color:#C91656}
+.my-post-card small{color:var(--muted)}
+.hm-user-name{display:block;border:0;background:none;padding:0;text-align:left;color:inherit;font:inherit;cursor:pointer}
+.mod-screen .hm-user-name{font-size:15px;font-weight:700}
+
+/* Latest Posts: equal card geometry with or without a thumbnail. */
+.poetry-main .poetry-feed .poetry-card{display:flex;flex-direction:column;height:clamp(185px,45vw,300px);box-sizing:border-box}
+.poetry-main .poetry-feed .poetry-preview-flow{flex:1;min-height:0;overflow:hidden}
+.poetry-main .poetry-feed .poetry-preview{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden}
+.poetry-main .poetry-feed .poetry-actions{margin-top:auto;flex-shrink:0}
+.poetry-selected-previews{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}
+.poetry-selected-previews img{width:72px;height:72px;object-fit:contain;border-radius:8px;background:#FFF8FA}
+.herday-edit-form label{display:block;margin:14px 0;font-weight:600}
+.herday-edit-form input,.herday-edit-form textarea,.herday-edit-form select{display:block;box-sizing:border-box;width:100%;padding:12px;border:1px solid #e4c4d2;border-radius:12px;background:#fff;font:inherit;color:inherit;margin-top:6px}
+.herday-edit-form textarea{min-height:160px;resize:vertical}
+.hm-edit-pending{margin:12px 0}
+.hm-perm .hm-psws{display:flex;flex-wrap:wrap;gap:8px}
+.hm-perm .hm-psw{min-height:44px}
+.poetry-actions .poetry-like:not(.is-on) svg{fill:none;stroke:currentColor;stroke-width:2}
+.poetry-actions .is-on{color:#df1674}
+.poetry-actions .is-on[data-poetry-action="save"] svg{fill:#fde7f0}
+.poetry-detail .poetry-detail-image{height:auto;max-height:75vh;aspect-ratio:auto;object-fit:contain;background:#fff}
+.herday-image-error{display:inline-flex;flex-direction:column;justify-content:center;align-items:center;min-height:90px;max-width:100%;padding:12px;background:#fdeef5;border-radius:12px;font-size:14px;gap:8px}
+.poetry-main .poetry-card .poetry-thumbnail{max-height:100%;object-fit:contain}
+/* Batch 2: existing #FFF8FA canvas and approved surfaces/CTA colors retained. */
+.poetry-main .poetry-shortcuts{display:flex;gap:8px;min-width:0;overflow:visible}.poetry-main .poetry-shortcuts>button{flex:0 0 auto;min-width:0;padding-inline:14px}.poetry-category-shortcuts{display:flex;flex:1;min-width:0;gap:8px;overflow-x:auto;scrollbar-width:thin}.poetry-category-shortcuts>button{flex:0 0 auto;min-width:0;padding-inline:14px}.poetry-category-feed .poetry-intro p{white-space:pre-wrap;overflow-wrap:anywhere}.herday-edit-form{max-height:85dvh;overflow-y:auto}#herdayEditImages{display:flex;flex-wrap:wrap;gap:12px}.herday-edit-image{width:110px}.herday-edit-image img{width:100%;height:100px;object-fit:contain}.herday-edit-image button{width:100%;min-height:36px}.herday-comment-actions{display:flex;gap:18px;margin-top:8px}.herday-comment-actions button,.herday-reply-label button{border:0;background:none;color:#BB1B58;font:inherit}.herday-comment-actions .is-on{font-weight:bold}.herday-comment-reply{margin-top:12px}.herday-comment-reply .poetry-avatar{width:30px;height:30px;flex-basis:30px}.herday-comment-copy{min-width:0}.herday-history-filters{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}.herday-history-filters input{min-height:44px;border:1px solid #E4C0D0;border-radius:12px;background:#FFFDFD;padding:8px;color:inherit}.herday-reply-label{margin:12px 0}.hm-psws{flex-wrap:wrap}
