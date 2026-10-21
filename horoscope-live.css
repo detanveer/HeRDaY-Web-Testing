@@ -1,0 +1,6 @@
+/* Dynamic data states only. Approved canvas remains #FFF8FA. */
+.horo-live-copy{white-space:pre-line!important;overflow-wrap:anywhere}
+.horo-service-state .view-horoscope{position:static;margin-top:12px;width:auto;padding-inline:20px}
+.horo-service-state p{margin:0}
+.horo-notice{color:#786c80;font-size:12px;line-height:1.5;margin:10px 0 0}
+.horoscope-page .lucky-card .lucky-symbol{background:#f8dde5;color:#430b26;font-style:normal}

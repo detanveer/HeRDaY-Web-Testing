@@ -1,0 +1,9 @@
+/* Equivalent UI roles share physical sizes. Home artwork/layout and specialist controls stay intact. */
+#beautyApp.beauty-shell{max-width:520px!important}
+#beautyApp :is(input.field,select.field,input.searchbox,input[type=search],.rr-filters select,[data-community-form]>input,[data-community-form]>select){box-sizing:border-box;font:400 14px/22px Poppins,sans-serif!important;min-height:44px!important;height:44px!important;padding-block:10px!important}
+#beautyApp :is(.hm-search,.poetry-search){box-sizing:border-box;min-height:44px!important;height:44px!important}
+#beautyApp :is(.hm-search,.poetry-search) input{min-height:0!important;height:100%!important;padding-block:0!important}
+#beautyApp :is([data-ex-search],[data-ex-category-search]){min-height:44px!important}
+#beautyApp :is([data-ex-search],[data-ex-category-search]) input{min-height:42px!important;height:42px!important;padding-block:10px!important}
+#beautyApp :is(.section-primary,.ex-button.primary,.btn.primary:not(.small),.poetry-submit-shortcut,.poetry-final-submit,.hm-btn.primary){font-size:14px!important;line-height:1.5!important;min-height:44px}
+#adminDialog input.field{box-sizing:border-box;font:400 14px/22px Poppins,sans-serif;min-height:44px;height:44px;padding-block:10px}
