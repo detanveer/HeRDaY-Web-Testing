@@ -1,4 +1,0 @@
-Territory currency defaults derived from Unicode CLDR currencyData.json, snapshot date 2026-10-20.
-Source: https://github.com/unicode-org/cldr-json/blob/main/cldr-json/cldr-core/supplemental/currencyData.json
-Unicode License v3: https://www.unicode.org/license.txt
-CLDR data is used only to default a currency; no exchange-rate conversion.
